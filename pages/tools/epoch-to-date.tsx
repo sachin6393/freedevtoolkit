@@ -1,23 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ToolLayout from "../../components/ToolLayout";
 import Head from "next/head";
-
-const tools = [
-  { name: "Epoch Timestamp To Date", href: "/tools/epoch-to-date" },
-  { name: "XML to JSON Converter", href: "/tools/xml-to-json" },
-  { name: "JSON to XML Converter", href: "/tools/json-to-xml" },
-  { name: "CSV to JSON Converter", href: "/tools/csv-to-json" },
-  { name: "CSV to XML Converter", href: "/tools/csv-to-xml" },
-  { name: "YAML to JSON Converter", href: "/tools/yaml-to-json" },
-  { name: "JSON to YAML Converter", href: "/tools/json-to-yaml" },
-{ name: "Base64 Encoder/Decoder", href: "/tools/base64-encoder-decoder" },
-{ name: "URL Encoder/Decoder", href: "/tools/url-encoder-decoder" },
-{ name: "Hex to Decimal Converter", href: "/tools/hex-to-decimal" },
-{ name: "Decimal to Hex Converter", href: "/tools/decimal-to-hex" },
-{ name: "Binary to Decimal Converter", href: "/tools/binary-to-decimal" },
-{ name: "Decimal to Binary Converter", href: "/tools/decimal-to-binary" },
-
-];
+import { toolList } from "@/components/utils/toolList";
 
 export default function EpochToDate() {
   const [timestamp, setTimestamp] = useState("");
@@ -69,7 +53,7 @@ export default function EpochToDate() {
   };
 
   return (
-    <ToolLayout tools={tools}>
+    <ToolLayout tools={toolList}>
       <Head>
         <title>Epoch to Human Date Converter - Converter Tools</title>
         <meta
