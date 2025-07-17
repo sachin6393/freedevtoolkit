@@ -110,7 +110,7 @@ export default function JsonToXml() {
           <div>
             <label className="block text-lg font-semibold mb-2">JSON Input</label>
             <textarea
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-white"
+              className="w-full h-60 p-3 bg-gray-900 border border-white-700 rounded text-sm text-white"
               placeholder="Paste your JSON here..."
               value={jsonInput}
               onChange={(e) => setJsonInput(e.target.value)}
@@ -142,7 +142,7 @@ export default function JsonToXml() {
             <label className="block text-lg font-semibold mb-2">XML Output</label>
             <textarea
               readOnly
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-green-300"
+              className="w-full h-60 p-3 bg-gray-900 border rounded text-sm text-green-300"
               value={xmlOutput}
               placeholder="Converted XML will appear here..."
             />

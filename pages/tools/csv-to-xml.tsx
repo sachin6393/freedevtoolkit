@@ -116,7 +116,7 @@ export default function CsvToXml() {
           <div>
             <label className="block text-lg font-semibold mb-2">CSV Input</label>
             <textarea
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-white"
+              className="w-full h-60 p-3 bg-gray-900 border border-white-700 rounded text-sm text-white"
               placeholder="Paste your CSV here or upload a file..."
               value={csvInput}
               onChange={(e) => setCsvInput(e.target.value)}
@@ -124,7 +124,7 @@ export default function CsvToXml() {
 
             <div className="mt-2 mb-2">
               <label className="flex items-center gap-2 text-sm text-white bg-gray-800 border border-gray-600 px-4 py-2 rounded cursor-pointer w-fit hover:bg-gray-700">
-                📁 Choose CSV File
+                📁 Choose File
                 <input
                   type="file"
                   accept=".csv,text/csv"
@@ -162,7 +162,7 @@ export default function CsvToXml() {
             <label className="block text-lg font-semibold mb-2">XML Output</label>
             <textarea
               readOnly
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-green-300"
+              className="w-full h-60 p-3 bg-gray-900 border  rounded text-sm text-green-300"
               value={xmlOutput}
               placeholder="Converted XML will appear here..."
             />

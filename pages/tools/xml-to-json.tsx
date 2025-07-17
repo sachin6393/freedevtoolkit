@@ -135,7 +135,7 @@ export default function XmlToJson() {
               XML Input
             </label>
             <textarea
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-white"
+              className="w-full h-60 p-3 bg-gray-900 border border-white-700 rounded text-sm text-white"
               placeholder="Paste your XML here..."
               value={xmlInput}
               onChange={(e) => setXmlInput(e.target.value)}
@@ -169,7 +169,7 @@ export default function XmlToJson() {
             </label>
             <textarea
               readOnly
-              className="w-full h-60 p-3 bg-gray-900 border border-gray-700 rounded text-sm text-green-300"
+              className="w-full h-60 p-3 bg-gray-900 border rounded text-sm text-green-300"
               value={jsonOutput}
               placeholder="Converted JSON will appear here..."
             />
