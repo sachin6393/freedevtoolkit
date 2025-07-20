@@ -32,7 +32,7 @@ export default function CsvToJson() {
       setJsonOutput(json);
       setError("");
     } catch (err: any) {
-      setError(err.message || "Invalid CSV format");
+      setError("Invalid CSV format");
       setJsonOutput("");
     }
   };
@@ -126,7 +126,7 @@ export default function CsvToJson() {
                 Reset
               </button>
             </div>
-            {error && <p className="text-red-400 mt-2">{error}</p>}
+            {error && <p className="text-red-500 mt-2">{error}</p>}
           </div>
 
           <div>

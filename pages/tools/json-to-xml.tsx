@@ -135,7 +135,7 @@ export default function JsonToXml() {
                 Reset
               </button>
             </div>
-            {error && <p className="text-red-400 mt-2">{error}</p>}
+            {error && <p className="text-red-500 mt-3">{error}</p>}
           </div>
 
           <div>

@@ -44,7 +44,7 @@ export default function CsvToXml() {
       setXmlOutput(xml);
       setError("");
     } catch (err: any) {
-      setError(err.message || "Invalid CSV format");
+      setError("Invalid CSV format");
       setXmlOutput("");
     }
   };
@@ -155,7 +155,7 @@ export default function CsvToXml() {
                 Reset
               </button>
             </div>
-            {error && <p className="text-red-400 mt-2">{error}</p>}
+            {error && <p className="text-red-500 mt-2">{error}</p>}
           </div>
 
           <div>

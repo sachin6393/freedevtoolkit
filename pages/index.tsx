@@ -47,6 +47,12 @@ const tools = [
       'Transform JSON objects into clean YAML syntax for config files and DevOps use. Easy to use and fast, with support for nested data structures.'
   },
   {
+    name: 'Text Case Converter',
+    href: '/tools/text-case-converter',
+    description:
+      'Convert text between different cases: uppercase, lowercase, title case, sentence case, and capitalized words. Perfect for formatting text in documents, code comments, and more.'
+  },
+  {
     name: 'Base64 Encoder/Decoder',
     href: '/tools/base64-encoder-decoder',
     description:
@@ -57,6 +63,12 @@ const tools = [
     href: '/tools/url-encoder-decoder',
     description:
       'Encode or decode URLs to ensure safe transmission over the web. Handles special characters and spaces.'
+  },
+  {
+    name: 'JWT Decoder',
+    href: '/tools/jwt-decoder',
+    description:
+      'Decode JSON Web Tokens (JWT) to inspect their payload and verify signatures. Useful for debugging and understanding JWTs.'
   },
   {
     name: 'Hex to Decimal Converter',

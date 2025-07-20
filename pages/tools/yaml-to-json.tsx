@@ -16,7 +16,7 @@ export default function YamlToJsonConverter() {
       setJsonOutput(formatted);
       setError("");
     } catch (e: any) {
-      setError(e.message || "Invalid YAML format");
+      setError("Invalid YAML format");
       setJsonOutput("");
     }
   };
@@ -101,6 +101,7 @@ skills:
               Reset
             </button>
           </div>
+           {error && <p className="text-red-500 mt-3">⚠️ {error}</p>}
         </div>
 
         <div className="flex-1 flex flex-col">
@@ -127,7 +128,7 @@ skills:
             </button>
           </div>
           )}
-          {error && <p className="text-red-500 mt-3">⚠️ {error}</p>}
+          {/* {error && <p className="text-red-500 mt-3">⚠️ {error}</p>} */}
         </div>
       </div>
        <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
