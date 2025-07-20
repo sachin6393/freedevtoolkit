@@ -150,15 +150,15 @@ export default function JsonToXml() {
               <>
                 <button
                   onClick={copyToClipboard}
-                  className="mt-2 mr-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="mt-2 mr-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Copy XML
+                  Copy
                 </button>
                 <button
                   onClick={downloadXml}
-                  className="mt-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="mt-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Download XML
+                  Download
                 </button>
               </>
             )}

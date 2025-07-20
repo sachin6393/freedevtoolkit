@@ -123,7 +123,7 @@ export default function CsvToXml() {
             />
 
             <div className="mt-2 mb-2">
-              <label className="flex items-center gap-2 text-sm text-white bg-gray-800 border border-gray-600 px-4 py-2 rounded cursor-pointer w-fit hover:bg-gray-700">
+              <label className="flex items-center gap-2 text-sm text-white bg-purple-600 border border-gray-600 px-4 py-2 rounded cursor-pointer w-fit hover:bg-purple-700">
                 📁 Choose File
                 <input
                   type="file"
@@ -170,15 +170,15 @@ export default function CsvToXml() {
               <>
                 <button
                   onClick={copyToClipboard}
-                  className="mt-2 mr-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="mt-2 mr-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Copy XML
+                  Copy
                 </button>
                 <button
                   onClick={downloadXml}
-                  className="mt-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="mt-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Download XML
+                  Download
                 </button>
               </>
             )}

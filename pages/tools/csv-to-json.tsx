@@ -141,15 +141,15 @@ export default function CsvToJson() {
               <div className="mt-2">
                 <button
                   onClick={copyToClipboard}
-                  className="mr-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="mr-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Copy JSON
+                  Copy
                 </button>
                 <button
                   onClick={downloadJson}
-                  className="bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                  className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
                 >
-                  Download JSON
+                  Download
                 </button>
               </div>
             )}

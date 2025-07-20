@@ -87,18 +87,18 @@ skills:
               className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
             >
               Convert
-            </button>
+            </button>       
             <button
+              onClick={handleExample}
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            >
+              Load Example
+            </button>
+              <button
               onClick={handleReset}
               className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700"
             >
               Reset
-            </button>
-            <button
-              onClick={handleExample}
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-            >
-              Load Example
             </button>
           </div>
         </div>
@@ -111,22 +111,22 @@ skills:
             readOnly
             placeholder="Converted JSON will appear here..."
           />
+          {jsonOutput && (
           <div className="mt-3 flex gap-2 flex-wrap">
             <button
-              onClick={handleCopy}
-              disabled={!jsonOutput}
-              className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 disabled:opacity-50"
+              onClick={handleCopy}        
+              className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
             >
               Copy
             </button>
             <button
               onClick={handleDownload}
-              disabled={!jsonOutput}
-              className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 disabled:opacity-50"
+              className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
             >
               Download
             </button>
           </div>
+          )}
           {error && <p className="text-red-500 mt-3">⚠️ {error}</p>}
         </div>
       </div>

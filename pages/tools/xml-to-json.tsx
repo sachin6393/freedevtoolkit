@@ -177,15 +177,15 @@ export default function XmlToJson() {
                 <>
               <button
                 onClick={copyToClipboard}
-                className="mt-2 mr-1.5 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+                className="mt-2 mr-1.5 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
               >
-                Copy JSON
+                Copy
               </button>
                <button
               onClick={downloadJson}
-              className="mt-2 bg-yellow-500 hover:bg-yellow-700 text-white px-3 py-1 rounded text-sm"
+              className="mt-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
             >
-              Download JSON
+              Download
             </button>
               </>
               
