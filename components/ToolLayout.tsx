@@ -26,7 +26,7 @@ export default function ToolLayout({ tools, children }: Props) {
           } md:translate-x-0 fixed md:relative z-40 h-full md:h-auto`}
         >
           <h2 className="text-lg text-black font-semibold mb-2">
-              Converters
+              Tools
           </h2>
           <div className="w-full h-1 mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
           <ul className="space-y-2">
