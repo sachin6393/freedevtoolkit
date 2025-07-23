@@ -75,7 +75,7 @@ export default function TextCaseConverter() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">Text Case Converter</h1>
+      <h1 className="text-2xl font-bold mb-4">Text Case Converter</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Quickly convert text into different developer-friendly formats such as camelCase, PascalCase, snake_case, CONSTANT_CASE, and more.
       </p>

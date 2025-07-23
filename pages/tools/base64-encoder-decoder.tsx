@@ -60,7 +60,7 @@ export default function Base64Tool() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">Base64 Encoder / Decoder</h1>
+      <h1 className="text-2xl font-bold mb-4">Base64 Encoder / Decoder</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Easily encode or decode Base64 strings. Use the toggle to switch modes,
         paste your text, and click Convert. You can also copy or download the result.

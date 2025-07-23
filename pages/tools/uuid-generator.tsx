@@ -29,7 +29,7 @@ export default function UUIDGenerator() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">UUID Generator (v4)</h1>
+      <h1 className="text-2xl font-bold mb-4">UUID Generator (v4)</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Universally Unique Identifiers (UUIDs) are 128-bit values used to uniquely identify information in computer systems,
           databases, and distributed applications. This tool generates version 4 UUIDs, which are created using secure random 

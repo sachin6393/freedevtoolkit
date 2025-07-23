@@ -100,7 +100,7 @@ export default function JsonToXml() {
       </Head>
 
       <ToolLayout tools={tools}>
-        <h1 className="text-3xl font-bold mb-4">JSON to XML Converter</h1>
+        <h1 className="text-2xl font-bold mb-4">JSON to XML Converter</h1>
         <p className="mb-6 text-gray-300 max-w-2xl">
           Convert JSON data into structured XML markup. Supports arrays, nested objects, and special character escaping.
           Ideal for developers integrating with XML-based APIs.

@@ -63,7 +63,7 @@ const handleFormat = () => {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">JSON Formatter / Beautifier</h1>
+      <h1 className="text-2xl font-bold mb-4">JSON Formatter / Beautifier</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Paste your minified or raw JSON and format it for readability. Ideal for developers who want clean and readable JSON data.
       </p>

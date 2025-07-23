@@ -55,7 +55,7 @@ export default function HTMLEntityConverter() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">
+      <h1 className="text-2xl font-bold mb-4">
         HTML Entities Encoder / Decoder
       </h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
@@ -66,14 +66,14 @@ export default function HTMLEntityConverter() {
 
       <div className="mb-4">
         <label className="mr-4 font-medium">Mode:</label>
-<select
-  className="bg-gradient-to-r from-white to-gray-100 text-gray-900 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200 shadow-sm"
-  value={mode}
-  onChange={(e) => setMode(e.target.value as "encode" | "decode")}
->
-  <option value="encode">Encode HTML Entities</option>
-  <option value="decode">Decode HTML Entities</option>
-</select>
+        <select
+          className="bg-gradient-to-r from-white to-gray-200 text-gray-900 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200 shadow-sm"
+          value={mode}
+          onChange={(e) => setMode(e.target.value as "encode" | "decode")}
+        >
+          <option value="encode">Encode HTML Entities</option>
+          <option value="decode">Decode HTML Entities</option>
+        </select>
       </div>
 
       <div className="flex flex-col md:flex-row gap-6">

@@ -62,10 +62,9 @@ export default function EpochToDate() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">
+      <h1 className="text-2xl font-bold mb-4">
         Epoch & Unix Timestamp Converter
       </h1>
-      <div className="w-100% h-1 mx-auto mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
 
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">

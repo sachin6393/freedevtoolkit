@@ -60,7 +60,7 @@ export default function JsonToYamlConverter() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">JSON to YAML Converter</h1>
+      <h1 className="text-2xl font-bold mb-4">JSON to YAML Converter</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Easily convert JSON data to YAML format. Paste your JSON code below and click "Convert" to get YAML output.
         You can also copy or download the result.

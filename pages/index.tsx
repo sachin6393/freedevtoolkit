@@ -47,6 +47,12 @@ const tools = [
       'Transform JSON objects into clean YAML syntax for config files and DevOps use. Easy to use and fast, with support for nested data structures.'
   },
   {
+    name: 'JSON Formatter',
+    href: '/tools/json-formatter',
+    description:
+      'Format and beautify JSON data for better readability. This tool helps developers quickly debug and visualize JSON structures with syntax highlighting.'
+  },
+  {
     name: 'Text Case Converter',
     href: '/tools/text-case-converter',
     description:
@@ -59,16 +65,40 @@ const tools = [
       'Encode or decode Base64 strings quickly. Useful for data encoding, API requests, and file transfers.'
   },
   {
+    name: 'JWT Decoder',
+    href: '/tools/jwt-decoder',
+    description:
+      'Decode JSON Web Tokens (JWT) to inspect their payload and verify signatures. Useful for debugging and understanding JWTs.'
+  },
+  {
     name: 'URL Encoder/Decoder',
     href: '/tools/url-encoder-decoder',
     description:
       'Encode or decode URLs to ensure safe transmission over the web. Handles special characters and spaces.'
   },
   {
-    name: 'JWT Decoder',
-    href: '/tools/jwt-decoder',
+    name: 'HTML Entities Encoder/Decoder',
+    href: '/tools/html-entities',
     description:
-      'Decode JSON Web Tokens (JWT) to inspect their payload and verify signatures. Useful for debugging and understanding JWTs.'
+      'Encode or decode HTML entities like &lt;, &gt;, &amp;, ", &#39; instantly. Fast, SEO-friendly online tool for safe HTML string conversion.'
+  },
+  {
+    name: 'UUID Generator',
+    href: '/tools/uuid-generator',
+    description:
+      'Generate unique UUIDs (Universally Unique Identifiers) for database keys, session IDs, and more. Supports UUID versions 4.'
+  },
+  {
+    name: 'Text Diff Checker',
+    href: '/tools/text-diff-checker',
+    description:
+      'Compare two blocks of text to see the differences highlighted. Useful for content comparison, developers, and copy editors.'
+  },
+  {
+    name: 'Regex Tester',
+    href: '/tools/regex-tester',
+    description:
+      'Test and debug regular expressions with real-time feedback. Supports syntax highlighting and error detection for efficient regex development.'
   },
   {
     name: 'Hex to Decimal Converter',
@@ -104,20 +134,20 @@ export default function HomePage() {
         <meta name="description" content="Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly." />
       </Head>
     <ToolLayout tools={tools}>
-      <h1 className="text-3xl font-extrabold mb-5 text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
+      <h1 className="text-3xl font-extrabold mb-2 text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
                 🚀 List of Tools
       </h1>
       <div className="w-100% h-1 mx-auto mb-5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
 
       {tools.map((tool, index) => (
         <div key={tool.href} className="mb-8">
-          <h2 className="text-1xl font-semibold">
+          <h2 className="text-xl font-semibold">
 
             <Link href={tool.href}
-            className="text-blue-300 hover:text-blue-500 transition-colors duration-200 ease-in-out inline-block hover:scale-105 transform"
+            className="text-blue-200 hover:text-blue-500 transition-colors duration-200 ease-in-out inline-block hover:scale-105 transform"
             >{tool.name}</Link>
           </h2>
-          <p className="text-white-700 mt-2">{tool.description}</p>
+          <p className="text-1xl text-white-700 mt-2">{tool.description}</p>
 
           {/* In-content Ad Placeholder */}
           {index > 0 && index % 2 === 0 && (

@@ -107,7 +107,7 @@ export default function CsvToXml() {
       </Head>
 
       <ToolLayout tools={tools}>
-        <h1 className="text-3xl font-bold mb-4">CSV to XML Converter</h1>
+        <h1 className="text-2xl font-bold mb-4">CSV to XML Converter</h1>
         <p className="mb-6 text-gray-300 max-w-2xl">
           Easily convert comma-separated values (CSV) into structured XML format. Upload files or paste directly. Perfect for legacy integrations and data workflows.
         </p>

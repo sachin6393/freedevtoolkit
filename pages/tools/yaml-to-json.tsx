@@ -63,7 +63,7 @@ skills:
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">YAML to JSON Converter</h1>
+      <h1 className="text-2xl font-bold mb-4">YAML to JSON Converter</h1>
         <p className="text-gray-700 dark:text-gray-300 mb-6">
             Convert YAML data to JSON format instantly. Paste your YAML code below
             and click "Convert" to see the JSON output.

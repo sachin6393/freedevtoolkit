@@ -63,7 +63,7 @@ export default function JwtDecoder() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">JWT Decoder</h1>
+      <h1 className="text-2xl font-bold mb-4">JWT Decoder</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Paste your JWT token below to decode and view its header and payload. This tool does not verify the signature. Everything runs locally in your browser.
       </p>

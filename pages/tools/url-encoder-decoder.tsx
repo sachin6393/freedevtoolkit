@@ -53,7 +53,7 @@ export default function UrlEncoderDecoder() {
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">URL Encoder / Decoder</h1>
+      <h1 className="text-2xl font-bold mb-4">URL Encoder / Decoder</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
         Easily encode or decode URL strings using this free online tool. Choose
         a mode, paste your input, and get the result instantly. No data is

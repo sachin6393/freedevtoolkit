@@ -99,7 +99,7 @@ This line is newly added.`;
         />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-4">Text Diff Checker</h1>
+      <h1 className="text-2xl font-bold mb-4">Text Diff Checker</h1>
       <p className="text-gray-300 mb-6">
         Compare two blocks of text side-by-side. Changes are highlighted. Useful
         for debugging, writing, and code reviews.
@@ -108,7 +108,7 @@ This line is newly added.`;
       <div className="mb-4">
         <label className="mr-4 font-semibold">Comparison Type:</label>
         <select
-          className="bg-gray-800 border border-gray-600 text-white px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+  className="bg-gradient-to-r from-white to-gray-200 text-gray-900 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200 shadow-sm"
           value={diffType}
           onChange={(e) => setDiffType(e.target.value as "line" | "word")}
         >

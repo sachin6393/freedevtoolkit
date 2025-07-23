@@ -122,7 +122,7 @@ export default function XmlToJson() {
       </Head>
 
       <ToolLayout tools={tools}>
-        <h1 className="text-3xl font-bold mb-4">XML to JSON Converter</h1>
+        <h1 className="text-2xl font-bold mb-4">XML to JSON Converter</h1>
         <p className="mb-6 text-gray-300 max-w-2xl">
           Easily convert structured XML into readable, developer-friendly JSON
           format. Supports attributes and nested tags. Great for debugging, API

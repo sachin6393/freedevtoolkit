@@ -25,10 +25,10 @@ export default function ToolLayout({ tools, children }: Props) {
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0 fixed md:relative z-40 h-full md:h-auto`}
         >
-          <h2 className="text-lg text-black font-semibold mb-2">
+          <h2 className="text-lg text-black font-semibold mb-1">
               Tools
           </h2>
-          <div className="w-full h-1 mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
+          <div className="w-full h-1 mb-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
           <ul className="space-y-2">
             {tools.map((tool) => (
               <li key={tool.href}>

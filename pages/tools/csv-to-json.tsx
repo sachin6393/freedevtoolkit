@@ -90,7 +90,7 @@ export default function CsvToJson() {
       </Head>
 
       <ToolLayout tools={tools}>
-        <h1 className="text-3xl font-bold mb-4">CSV to JSON Converter</h1>
+        <h1 className="text-2xl font-bold mb-4">CSV to JSON Converter</h1>
         <p className="mb-6 text-gray-300 max-w-2xl">
           Convert comma-separated values (CSV) into structured JSON instantly. Ideal for APIs,
           config files, and data transformation.
