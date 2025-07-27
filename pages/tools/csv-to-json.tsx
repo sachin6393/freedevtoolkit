@@ -1,7 +1,9 @@
+'use client';
+
 import React, { useRef, useState } from "react";
 import Head from "next/head";
 import ToolLayout from "@/components/ToolLayout";
-import { toolList as tools } from "@/components/utils/toolList";
+import { toolList } from "@/components/utils/toolList";
 
 export default function CsvToJson() {
   const [csvInput, setCsvInput] = useState("");
@@ -89,9 +91,9 @@ export default function CsvToJson() {
         />
       </Head>
 
-      <ToolLayout tools={tools}>
+      <ToolLayout tools={toolList}>
         <h1 className="text-2xl font-bold mb-4">CSV to JSON Converter</h1>
-        <p className="mb-6 text-gray-300 max-w-2xl">
+        <p className="mb-6 text-gray-300 max-w-1xl">
           Convert comma-separated values (CSV) into structured JSON instantly. Ideal for APIs,
           config files, and data transformation.
         </p>

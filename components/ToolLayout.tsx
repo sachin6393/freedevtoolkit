@@ -1,6 +1,9 @@
+'use client';
+
 import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import Header from "./Header";
+import { useRouter } from "next/router";
 
 interface Tool {
   name: string;
@@ -14,6 +17,7 @@ interface Props {
 
 export default function ToolLayout({ tools, children }: Props) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <div className="min-h-screen">
@@ -47,7 +51,7 @@ export default function ToolLayout({ tools, children }: Props) {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 px-6 py-8">{children}</main>
+        <main className="flex-1 px-6 py-8" key={router.pathname} >{children}</main>
       </div>
     </div>
   );

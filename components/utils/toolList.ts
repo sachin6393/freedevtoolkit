@@ -15,6 +15,7 @@ export const toolList = [
   { name :"UUID Generator", href: "/tools/uuid-generator" },
   { name :"Text Diff Checker", href: "/tools/text-diff-checker" },
   { name :"Regex Tester", href: "/tools/regex-tester" },
+  { name :"Color Converter", href: "/tools/colorConverter" },
   { name: "Hex to Decimal Converter", href: "/tools/hex-to-decimal" },
   { name: "Decimal to Hex Converter", href: "/tools/decimal-to-hex" },
   { name: "Binary to Decimal Converter", href: "/tools/binary-to-decimal" },

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Head from "next/head";
-import { toolList as tools } from "@/components/utils/toolList";
+import { toolList} from "@/components/utils/toolList";
 import ToolLayout from "@/components/ToolLayout";
 
 export default function RegexTester() {
@@ -39,7 +39,7 @@ export default function RegexTester() {
 
   return (
     <>
-      <ToolLayout tools={tools}>
+      <ToolLayout tools={toolList}>
          <Head>
         <title>Online Regex Tester & Validator - Converter Tools</title>
         <meta
@@ -53,7 +53,11 @@ export default function RegexTester() {
         {/* <meta property="og:url" content="https://convertertools.com/tools/regex-tester" />
         <meta property="og:image" content="https://convertertools.com/og-image.png" /> */}
       </Head>
-      <h1 className="text-2xl font-bold mb-6">Regex Tester & Validator</h1>
+      <h1 className="text-2xl font-bold mb-4">Regex Tester & Validator</h1>
+      <p className="mb-6 text-gray-300 max-w-1xl">
+        This tool allows you to test and validate regular expressions in real-time. 
+        Enter your regex pattern and a test string to see if they match. You can also toggle flags like case-insensitive, global, and multiline to customize the behavior of your regex.
+      </p>
 
       <label className="block mb-2 font-medium">Regular Expression</label>
       <input

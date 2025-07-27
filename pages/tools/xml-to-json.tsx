@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from "react";
 import Head from "next/head";
 import ToolLayout from "@/components/ToolLayout";
@@ -123,7 +125,7 @@ export default function XmlToJson() {
 
       <ToolLayout tools={tools}>
         <h1 className="text-2xl font-bold mb-4">XML to JSON Converter</h1>
-        <p className="mb-6 text-gray-300 max-w-2xl">
+        <p className="mb-6 text-gray-300 max-w-1xl">
           Easily convert structured XML into readable, developer-friendly JSON
           format. Supports attributes and nested tags. Great for debugging, API
           testing, or data transformation.

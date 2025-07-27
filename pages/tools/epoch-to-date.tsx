@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
 import ToolLayout from "../../components/ToolLayout";
 import Head from "next/head";

@@ -1,7 +1,9 @@
+'use client';
+
 import React, { useState } from "react";
 import Head from "next/head";
 import ToolLayout from "@/components/ToolLayout";
-import { toolList as tools } from "@/components/utils/toolList";
+import { toolList } from "@/components/utils/toolList";
 
 export default function JsonToXml() {
   const [jsonInput, setJsonInput] = useState("");
@@ -99,9 +101,9 @@ export default function JsonToXml() {
         />
       </Head>
 
-      <ToolLayout tools={tools}>
+      <ToolLayout tools={toolList}>
         <h1 className="text-2xl font-bold mb-4">JSON to XML Converter</h1>
-        <p className="mb-6 text-gray-300 max-w-2xl">
+        <p className="mb-6 text-gray-300 max-w-1xl">
           Convert JSON data into structured XML markup. Supports arrays, nested objects, and special character escaping.
           Ideal for developers integrating with XML-based APIs.
         </p>

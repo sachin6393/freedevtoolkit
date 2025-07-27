@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from "react";
 import Head from "next/head";
 import ToolLayout from "@/components/ToolLayout";
@@ -77,7 +79,7 @@ export default function TextCaseConverter() {
 
       <h1 className="text-2xl font-bold mb-4">Text Case Converter</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
-        Quickly convert text into different developer-friendly formats such as camelCase, PascalCase, snake_case, CONSTANT_CASE, and more.
+        Quickly convert text into different developer-friendly formats such as UPPERCASE , lowercase, camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE.
       </p>
 
       <div className="flex flex-col md:flex-row gap-6">

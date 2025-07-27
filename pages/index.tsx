@@ -101,6 +101,12 @@ const tools = [
       'Test and debug regular expressions with real-time feedback. Supports syntax highlighting and error detection for efficient regex development.'
   },
   {
+    name: 'Color Converter',
+    href: '/tools/colorConverter',
+    description:
+      'Convert color very fast from from hex to RGB with a live color checker .'
+  },
+  {
     name: 'Hex to Decimal Converter',
     href: '/tools/hex-to-decimal',
     description:

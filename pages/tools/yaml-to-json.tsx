@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from "react";
 import Head from "next/head";
 import {load} from "js-yaml";
@@ -70,7 +72,6 @@ skills:
             You can also copy the output, or download it as a
             JSON file.
         </p>
-      {/* <div className="w-100% h-1 mx-auto mb-6 bg-gradient-to-r from-yellow-400 via-green-400 to-blue-400 rounded-full shadow"></div> */}
 
       <div className="flex flex-col md:flex-row gap-6">
         <div className="flex-1 flex flex-col">
