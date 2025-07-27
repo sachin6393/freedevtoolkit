@@ -83,6 +83,12 @@ export default function ColorConverter() {
             />
           </div>
         )}
+
+        
+      <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
+        [Ad Placeholder: Insert AdSense Code Here]
+      </div>
+      
       </ToolLayout>
     </>
   );

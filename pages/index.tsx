@@ -102,33 +102,21 @@ const tools = [
   },
   {
     name: 'Color Converter',
-    href: '/tools/colorConverter',
+    href: '/tools/color-converter',
     description:
       'Convert color very fast from from hex to RGB with a live color checker .'
   },
   {
-    name: 'Hex to Decimal Converter',
-    href: '/tools/hex-to-decimal',
+    name: 'Number Base Converter',
+    href: '/tools/number-base-converter',
     description:
-      'Convert hexadecimal numbers to decimal format easily. Useful for developers working with color codes, memory addresses, and more.'
+      'Convert numbers between different bases (e.g., binary, decimal, hexadecimal) easily. Useful for developers, data analysts, and anyone working with number systems.'
   },
   {
-    name: 'Decimal to Hex Converter',
-    href: '/tools/decimal-to-hex',
+    name: 'Age Calculator',
+    href: '/tools/age-calculator',
     description:
-      'Transform decimal numbers into hexadecimal format for programming, debugging, and data representation.'
-  },
-  {
-    name: 'Binary to Decimal Converter',
-    href: '/tools/binary-to-decimal',
-    description:
-      'Convert binary numbers into decimal format quickly. Ideal for computer science students and developers.'
-  },
-  {
-    name: 'Decimal to Binary Converter',
-    href: '/tools/decimal-to-binary',
-    description:
-      'Easily convert decimal numbers into binary format for programming, electronics, and data analysis.'
+      'Calculate the exact age or duration between two dates in years, months, weeks, days, hours, minutes, and seconds. A fast and developer friendly tool for age calculations.'
   }
 ];
 
