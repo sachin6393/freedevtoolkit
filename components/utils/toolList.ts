@@ -13,9 +13,13 @@ export const toolList = [
   { name: "URL Encoder/Decoder", href: "/tools/url-encoder-decoder" },
   { name: "HTML Entities Encoder/Decoder", href: "/tools/html-entities" },
   { name :"UUID Generator", href: "/tools/uuid-generator" },
+  { name: "SHA256 / MD5 Hash Generator", href: "/tools/hash-generator" },
+  // { name :"HMAC Generator", href: "/tools/hmac-generator" },
   { name :"Text Diff Checker", href: "/tools/text-diff-checker" },
+  { name :"String / Word Counter", href: "/tools/string-word-counter" },
   { name :"Regex Tester", href: "/tools/regex-tester" },
   { name :"Color Converter", href: "/tools/color-converter" },
   { name: "Number Base Converter", href: "/tools/number-base-converter" },
   { name: "Age Calculator", href: "/tools/age-calculator" },
+  { name: "Typing Practice", href: "/fun/typing-practice" },
 ];

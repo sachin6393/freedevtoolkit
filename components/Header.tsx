@@ -7,9 +7,9 @@ interface HeaderProps {
 
 export default function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
   return (
-    <header className=" top-0 z-50 bg-[#222] border-b shadow px-4 py-3 flex items-center justify-between">
-      <Link href="/" className="text-xl font-bold text-blue-600 hover:text-blue-800">
-        🧰 Converters ToolKit
+    <header className=" top-0 z-50 bg-[#9ec5eb] border-b shadow px-4 py-3 flex items-center justify-between">
+      <Link href="/" className="text-xl font-bold text-black hover:text-gray-600">
+        🧰 FREEDEVTOOLKIT.COM
       </Link>
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}

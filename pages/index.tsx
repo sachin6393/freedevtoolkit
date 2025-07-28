@@ -89,10 +89,22 @@ const tools = [
       'Generate unique UUIDs (Universally Unique Identifiers) for database keys, session IDs, and more. Supports UUID versions 4.'
   },
   {
+    name: 'SHA256 / MD5 Hash Generator',
+    href: '/tools/hash-generator',
+    description:
+      'Generate secure SHA256 or MD5 hashes for strings. Useful for password hashing, data integrity checks, and secure encoding.'
+  },
+  {
     name: 'Text Diff Checker',
     href: '/tools/text-diff-checker',
     description:
       'Compare two blocks of text to see the differences highlighted. Useful for content comparison, developers, and copy editors.'
+  },
+  {
+    name: 'String / Word Counter',
+    href: '/tools/string-word-counter',
+    description:
+      'Count words, characters (with and without spaces) in your text. Fast and minimal online string/word counter tool.'
   },
   {
     name: 'Regex Tester',
@@ -117,6 +129,12 @@ const tools = [
     href: '/tools/age-calculator',
     description:
       'Calculate the exact age or duration between two dates in years, months, weeks, days, hours, minutes, and seconds. A fast and developer friendly tool for age calculations.'
+  },
+  {
+    name: 'Typing Practice',
+    href: '/fun/typing-practice',
+    description:
+      'A fun typing practice tool to help improve your speed and accuracy. See real-time feedback as you type!'
   }
 ];
 
