@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useRef, useState } from "react";
 import Head from "next/head";
@@ -84,7 +84,10 @@ export default function CsvToJson() {
   return (
     <>
       <Head>
-        <title>CSV to JSON Converter - Instant & Free | Converters ToolKit | free csv to json converter | no login</title>
+        <title>
+          CSV to JSON Converter - Instant & Free | Converters ToolKit | free csv
+          to json converter | no login
+        </title>
         <meta
           name="description"
           content="Convert CSV data to clean JSON format instantly. Paste or upload CSV file. Fast, free, and privacy-safe CSV to JSON tool."
@@ -93,14 +96,16 @@ export default function CsvToJson() {
 
       <ToolLayout tools={toolList}>
         <h1 className="text-2xl font-bold mb-4">CSV to JSON Converter</h1>
-        <p className="mb-6 text-gray-300 max-w-1xl">
-          Convert comma-separated values (CSV) into structured JSON instantly. Ideal for APIs,
-          config files, and data transformation.
+        <p className="mb-6 text-gray-300 max-w-1xl text-sm">
+          Convert comma-separated values (CSV) into structured JSON instantly.
+          Ideal for APIs, config files, and data transformation.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
-            <label className="block text-lg font-semibold mb-2">CSV Input</label>
+            <label className="block text-lg font-semibold mb-2">
+              CSV Input
+            </label>
             <textarea
               className="w-full h-60 p-3 bg-gray-900 border border-white-700 rounded text-sm text-white"
               placeholder="Paste your CSV here or upload a file..."
@@ -118,13 +123,22 @@ export default function CsvToJson() {
               />
             </label>
             <div className="flex space-x-2 mt-3">
-              <button onClick={handleConvert} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+              <button
+                onClick={handleConvert}
+                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+              >
                 Convert
               </button>
-              <button onClick={handleExample} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+              <button
+                onClick={handleExample}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+              >
                 Load Example
               </button>
-              <button onClick={handleReset} className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded">
+              <button
+                onClick={handleReset}
+                className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded"
+              >
                 Reset
               </button>
             </div>
@@ -132,7 +146,9 @@ export default function CsvToJson() {
           </div>
 
           <div>
-            <label className="block text-lg font-semibold mb-2">JSON Output</label>
+            <label className="block text-lg font-semibold mb-2">
+              JSON Output
+            </label>
             <textarea
               readOnly
               className="w-full h-60 p-3 bg-gray-900 border rounded text-sm text-green-300"
@@ -160,6 +176,61 @@ export default function CsvToJson() {
 
         <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
           [Ad Placeholder: Insert AdSense Code Here]
+        </div>
+
+        <div className="bg-gray-800 p-6 rounded-lg text-gray-200 text-sm leading-6 mt-10 space-y-4">
+          <h2 className="text-lg font-semibold text-white">
+            What is a CSV to JSON Converter?
+          </h2>
+          <p>
+            A CSV to JSON converter is a tool that transforms comma-separated
+            value files (like Excel exports) into structured JSON format. This
+            is useful for working with APIs, web development, databases, and
+            config files. JSON is a widely used data format in modern
+            applications.
+          </p>
+
+          <h3 className="text-md font-semibold text-white">
+            Why use our CSV to JSON tool?
+          </h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>⚡ Instant conversion — just paste or upload your CSV file</li>
+            <li>🔒 100% privacy-safe — no data sent to server</li>
+            <li>🧠 Simple and intuitive interface</li>
+            <li>💾 Download and copy JSON output easily</li>
+          </ul>
+
+          <h3 className="text-md font-semibold text-white mt-4">
+            How to convert CSV to JSON?
+          </h3>
+          <ol className="list-decimal list-inside space-y-1">
+            <li>Paste your CSV content or upload a `.csv` file</li>
+            <li>
+              Click the <strong>Convert</strong> button
+            </li>
+            <li>View and copy your JSON result instantly</li>
+            <li>Optionally download the output as a `.json` file</li>
+          </ol>
+          <p>
+            If you need to convert CSV to XML, try our{" "}
+            <a
+              href="/tools/csv-to-xml"
+              className="text-blue-500 hover:underline"
+            >
+              CSV to XML converter
+            </a>
+            .
+          </p>
+          <p>
+            For more advanced JSON manipulation, check out our{" "}
+            <a
+              href="/tools/json-formatter"
+              className="text-blue-500 hover:underline"
+            >
+              JSON Formatter
+            </a>{" "}
+            tool.
+          </p>
         </div>
       </ToolLayout>
     </>

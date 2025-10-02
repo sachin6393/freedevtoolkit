@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import ToolLayout from "../../components/ToolLayout";
@@ -62,18 +62,27 @@ export default function EpochToDate() {
           name="description"
           content="Convert Unix epoch timestamps to readable human dates online. Instant, privacy-friendly, supports GMT and local time."
         />
+        <meta
+          name="keywords"
+          content="epoch to date, unix timestamp converter, convert epoch to date, human readable date, online epoch converter"
+        />
       </Head>
 
-      <h1 className="text-2xl font-bold mb-4">
+      <h1 className="text-xl font-bold mb-4">
         Epoch & Unix Timestamp Converter
       </h1>
+      <p className="mb-6 text-gray-300 text-sm">
+        Convert Unix epoch timestamps to human-readable dates and vice
+        versa,i.e. convert human-readable dates to Unix timestamps. Supports
+        both seconds and milliseconds precision.
+      </p>
 
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">
           Current Unix Timestamp (Seconds)
         </h2>
         <div className="flex items-center space-x-2">
-          <code className="text-lg bg-gray-500 px-6.5 py-1 rounded">
+          <code className="text-lg bg-gray-700 px-6.5 py-1 border rounded text-white">
             {currentEpoch}
           </code>
           <button
@@ -90,7 +99,7 @@ export default function EpochToDate() {
           Current Unix Timestamp (Milliseconds)
         </h2>
         <div className="flex items-center space-x-2">
-          <code className="text-lg bg-gray-500 px-3 py-1 rounded">
+          <code className="text-lg bg-gray-700 px-6.5 py-1 border rounded text-white">
             {currentEpochMs}
           </code>
           <button
@@ -109,13 +118,13 @@ export default function EpochToDate() {
             type="text"
             value={timestamp}
             onChange={(e) => setTimestamp(e.target.value)}
-            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0"
+            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0 text-white bg-gray-700"
             placeholder="Enter Unix timestamp (e.g. 1719857285 or 1719857285123)"
           />
           <select
             value={timezone}
             onChange={(e) => setTimezone(e.target.value as "local" | "gmt")}
-            className="border rounded px-2 py-2 bg-gray-500 text-white"
+            className="border rounded px-2 py-2 bg-gray-700 text-white"
           >
             <option value="local">Local</option>
             <option value="gmt">GMT/UTC</option>
@@ -149,18 +158,18 @@ export default function EpochToDate() {
             type="date"
             value={dateInput}
             onChange={(e) => setDateInput(e.target.value)}
-            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0"
+            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0 text:white bg-gray-700"
           />
           <input
             type="time"
             value={timeInput}
             onChange={(e) => setTimeInput(e.target.value)}
-            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0"
+            className="w-full sm:w-auto border px-3 py-2 rounded mb-2 sm:mb-0 text:white bg-gray-700"
           />
           <select
             value={timezone}
             onChange={(e) => setTimezone(e.target.value as "local" | "gmt")}
-            className="border rounded px-2 py-2 bg-gray-500 text-white"
+            className="border rounded px-2 py-2 bg-gray-700 text-white"
           >
             <option value="local">Local</option>
             <option value="gmt">GMT/UTC</option>
@@ -214,6 +223,34 @@ export default function EpochToDate() {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+
+      <section className="mt-10 text-gray-300 leading-relaxed text-sm">
+        <h2 className="text-xl font-semibold mb-2">
+          About Epoch & Unix Timestamp Converter
+        </h2>
+        <p>
+          This free online <strong>Epoch & Unix Timestamp Converter</strong>{" "}
+          allows you to convert Unix timestamps to human-readable dates and vice
+          versa. Whether you're a developer, engineer, data analyst, or curious
+          user, this tool makes it easy to work with <strong>epoch time</strong>{" "}
+          — the number of seconds (or milliseconds) that have passed since
+          January 1, 1970 (UTC).
+        </p>
+        <p className="mt-2">
+          Convert <strong>epoch to date</strong> in both{" "}
+          <strong>GMT/UTC</strong> and your local timezone. Or select a date and
+          time to get the corresponding Unix timestamp instantly. You can also
+          view the
+          <strong> current Unix time</strong> in both seconds and milliseconds,
+          updated in real-time.
+        </p>
+        <p className="mt-2">
+          No server processing, no delays — all calculations are done in your
+          browser to ensure your privacy and performance. It's the perfect
+          utility for debugging APIs, logging time values, or working with
+          databases, cron jobs, and more.
+        </p>
+      </section>
     </ToolLayout>
   );
 }

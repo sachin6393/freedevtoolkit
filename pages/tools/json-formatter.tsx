@@ -62,6 +62,15 @@ const handleFormat = () => {
           name="description"
           content="Format and beautify your JSON instantly with our fast, SEO-friendly JSON formatter tool. Indent and prettify JSON for easy reading and debugging."
         />
+        <meta
+          name="keywords"
+          content="json formatter, json beautifier, online json formatter, format json, beautify json"
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/json-formatter"
+        />
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">JSON Formatter / Beautifier</h1>
@@ -131,6 +140,44 @@ const handleFormat = () => {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+
+   <section className="mt-10 text-sm text-gray-300">
+  <h2 className="text-xl font-semibold mb-2 text-white">What is a JSON Formatter?</h2>
+  <p className="mb-4">
+    A JSON Formatter is a tool that helps developers format and beautify raw or minified JSON data. Properly formatted JSON makes it easier to read, debug, and share with others. This tool quickly adds indentation and line breaks to improve the readability of your JSON.
+  </p>
+
+  <h3 className="text-lg font-semibold mb-2 text-white">Why Use a JSON Beautifier?</h3>
+  <ul className="list-disc list-inside mb-4 text-gray-300">
+    <li>Instantly convert minified or raw JSON into a human-readable format</li>
+    <li>Helps with debugging API responses and configurations</li>
+    <li>Easy to copy or download formatted JSON data</li>
+    <li>No installation or login required — runs entirely in your browser</li>
+  </ul>
+
+  <h3 className="text-lg font-semibold mb-2 text-white">Frequently Asked Questions</h3>
+  <h4 className="font-semibold mt-3 mb-1">Is this JSON Formatter free to use?</h4>
+  <p className="mb-2">Yes, this tool is completely free and runs client-side for maximum speed and privacy.</p>
+
+  <h4 className="font-semibold mb-1">Does this tool support large JSON files?</h4>
+  <p className="mb-2">Yes, but there's a limit of 100,000 characters to maintain performance. For large files, consider splitting your JSON or using an offline formatter.</p>
+
+  <h4 className="font-semibold mb-1">Can I download the formatted JSON?</h4>
+  <p className="mb-2">Absolutely! Use the <b>Download</b> button after formatting your JSON to save it as a `.json` file.</p>
+
+  <h3 className="text-lg font-semibold mt-6 mb-2 text-white">Use Cases</h3>
+  <ul className="list-disc list-inside mb-6 text-gray-300">
+    <li>Frontend or backend developers working with APIs</li>
+    <li>Debugging REST API responses in JavaScript or Python</li>
+    <li>Beautifying config files used in Node.js, React, or other frameworks</li>
+  </ul>
+
+  <p className="text-gray-400 text-xs">
+    Tags: JSON Formatter, JSON Beautifier, Online JSON Viewer, Prettify JSON, Developer Tools, Format JSON Online, Debug JSON, JSON Viewer Online, Free JSON Tool
+  </p>
+</section>
+
+
     </ToolLayout>
   );
 }

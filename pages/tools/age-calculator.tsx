@@ -85,13 +85,14 @@ export default function AgeCalculator() {
         />
       </Head>
       <ToolLayout tools={toolList}>
-        <h1 className="text-2xl font-bold mb-4">Age Calculator</h1>
-        <p className="mb-6 text-gray-300">
+        <h1 className="text-lg font-bold mb-4">Age Calculator</h1>
+        <p className="mb-6 text-gray-300 text-sm">
           Enter two dates to find the duration between them — in years, months,
           days, and more.
         </p>
 
-        <div className="flex gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-1">
               From Date
@@ -148,8 +149,8 @@ export default function AgeCalculator() {
         <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
           [Ad Placeholder: Insert AdSense Code Here]
         </div>
-        <section className="mt-6 text-gray-300 leading-relaxed">
-          <h2 className="text-xl font-semibold mb-2">
+        <section className="mt-6 text-gray-300 leading-relaxed text-sm">
+          <h2 className="text-lg font-semibold mb-2">
             What is an Age Calculator?
           </h2>
           <p>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
@@ -24,19 +24,36 @@ export default function UUIDGenerator() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>UUID Generator - Generate UUID v4 Online</title>
+        <title>UUID Generator Online - Free UUID v4 Generator Tool</title>
         <meta
           name="description"
-          content="Generate UUIDs (version 4) instantly with our online UUID generator tool. Fast, secure, and SEO-friendly with copy and regenerate features."
+          content="Generate UUID v4 instantly with this secure and free online UUID generator tool. No ads, no login. Copy and regenerate UUIDs easily for use in APIs, databases, and more."
         />
+        <meta
+          name="keywords"
+          content="UUID generator, UUID v4, unique identifier, online tool, free UUID"
+        />
+        <meta
+          property="og:title"
+          content="UUID Generator Online - Free UUID v4 Generator Tool"
+        />
+        <meta
+          property="og:description"
+          content="Generate UUID v4 instantly with this secure
+  and free online UUID generator tool. No ads, no login. Copy and regenerate UUIDs easily for use in APIs, databases, and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/tools/uuid-generator" />
+        <meta property="og:image" content="/images/uuid-generator.png" />
+        <link rel="canonical" href="/tools/uuid-generator" />
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">UUID Generator (v4)</h1>
-      <p className="text-gray-700 dark:text-gray-300 mb-6">
-        Universally Unique Identifiers (UUIDs) are 128-bit values used to uniquely identify information in computer systems,
-          databases, and distributed applications. This tool generates version 4 UUIDs, which are created using secure random 
-          numbers for maximum uniqueness and unpredictability. UUID v4 is widely used for session IDs, database keys, API tokens,
-           and more—ensuring no collisions even at massive scale. Instantly generate, copy, and reuse UUIDs with a single click.
+      <p className="text-gray-700 dark:text-gray-300 mb-6 text-sm">
+        Generate a Universally Unique Identifier (UUID) version 4 instantly.
+        UUIDs are used to uniquely identify information in computer systems,
+        databases, and distributed applications. This tool generates secure,
+        random UUIDs that can be copied and reused in your projects.
       </p>
 
       <div className="bg-gray-900 text-green-300 p-4 rounded text-center text-lg font-mono break-all border min-h-[4rem]">
@@ -62,6 +79,63 @@ export default function UUIDGenerator() {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+
+      <div className="mt-10 space-y-6 text-sm text-gray-700 dark:text-gray-300">
+  <section>
+    <h2 className="text-lg font-semibold mb-2">What is a UUID (Universally Unique Identifier)?</h2>
+    <p>
+      A UUID is a 128-bit number used to uniquely identify information in computer systems. UUIDs are essential for generating unique keys, session identifiers, transaction IDs, and more — without requiring a central authority or database.
+    </p>
+    <p>
+      This tool generates <strong>UUID version 4 (UUID v4)</strong>, which are randomly generated using cryptographically secure values to avoid collisions.
+    </p>
+  </section>
+
+  <section>
+    <h2 className="text-lg font-semibold mb-2">Why Use This UUID Generator?</h2>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>Instantly generate secure, unique UUID v4 values.</li>
+      <li>Client-side only – nothing is stored or sent to a server.</li>
+      <li>Useful for software development, database keys, tokens, and identifiers.</li>
+      <li>Includes copy and regenerate functionality for ease of use.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 className="text-lg font-semibold mb-2">FAQs</h2>
+    <div className="space-y-4">
+      <div>
+        <strong>❓ What version of UUID does this tool generate?</strong>
+        <p>
+          This tool generates <strong>UUID v4</strong>, which is based on secure random values and is suitable for most modern applications.
+        </p>
+      </div>
+
+      <div>
+        <strong>❓ Are the UUIDs generated here truly unique?</strong>
+        <p>
+          While no tool can guarantee 100% uniqueness, UUID v4 provides 122 bits of randomness — making collisions extremely unlikely (roughly 1 in 2<sup>122</sup>).
+        </p>
+      </div>
+
+      <div>
+        <strong>❓ Is this UUID Generator secure?</strong>
+        <p>
+          Yes. It runs entirely in your browser using the native <code>crypto.randomUUID()</code> API. No data is transmitted or stored.
+        </p>
+      </div>
+
+      <div>
+        <strong>❓ Can I use these UUIDs in production applications?</strong>
+        <p>
+          Absolutely. UUID v4 is widely used in production systems for database keys, API tokens, user IDs, and more.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
     </ToolLayout>
   );
 }

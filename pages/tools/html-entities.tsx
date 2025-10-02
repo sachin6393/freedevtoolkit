@@ -133,6 +133,153 @@ export default function HTMLEntityConverter() {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+
+      <section className="mt-10 text-gray-300">
+  <h2 className="text-xl font-semibold mb-3 text-white">
+    What is an HTML Entities Encoder/Decoder?
+  </h2>
+  <p className="mb-4">
+    An HTML Entities Encoder/Decoder tool helps developers convert special
+    characters like <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>,
+    and quotes into safe HTML entity codes (such as <code>&amp;lt;</code> or
+    <code>&amp;gt;</code>). Encoding is useful when you need to display code or
+    user input on a webpage without executing it. Decoding reverses the process,
+    turning encoded entities back into readable text or HTML.
+  </p>
+
+  <h3 className="font-semibold text-white mb-2">
+    Why Do You Need HTML Entity Encoding?
+  </h3>
+  <ul className="list-disc list-inside mb-4 text-gray-300">
+    <li>Prevents XSS (Cross-Site Scripting) vulnerabilities</li>
+    <li>Ensures special symbols display correctly on webpages</li>
+    <li>Safely show code snippets in documentation or blogs</li>
+    <li>Improves browser compatibility for HTML content</li>
+  </ul>
+
+  <h3 className="font-semibold text-white mb-2">
+    When Should You Decode HTML Entities?
+  </h3>
+  <p className="mb-4">
+    Decoding HTML entities is essential when retrieving or displaying stored
+    HTML content, such as from databases or APIs. It ensures text like
+    <code>&amp;amp;</code> is shown as <code>&amp;</code>, improving user
+    readability. This is common in CMS systems, JavaScript frameworks, and form
+    submissions.
+  </p>
+
+  <h3 className="font-semibold text-white mb-2">Common Encoded Characters</h3>
+  <table className="w-full text-sm border border-gray-700 text-left mb-6">
+    <thead className="bg-gray-800 text-gray-100">
+      <tr>
+        <th className="px-3 py-2 border border-gray-700">Character</th>
+        <th className="px-3 py-2 border border-gray-700">Entity Name</th>
+        <th className="px-3 py-2 border border-gray-700">Entity Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="px-3 py-2 border border-gray-700">&lt;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;lt;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;#60;</td>
+      </tr>
+      <tr>
+        <td className="px-3 py-2 border border-gray-700">&gt;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;gt;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;#62;</td>
+      </tr>
+      <tr>
+        <td className="px-3 py-2 border border-gray-700">&amp;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;amp;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;#38;</td>
+      </tr>
+      <tr>
+        <td className="px-3 py-2 border border-gray-700">"</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;quot;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;#34;</td>
+      </tr>
+      <tr>
+        <td className="px-3 py-2 border border-gray-700">'</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;apos;</td>
+        <td className="px-3 py-2 border border-gray-700">&amp;#39;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 className="font-semibold text-white mb-2">Frequently Asked Questions</h3>
+  <div className="space-y-4">
+    <div>
+      <h4 className="font-semibold">1. What are HTML entities?</h4>
+      <p>
+        HTML entities are codes used to represent reserved characters in HTML
+        that might otherwise be interpreted as code. For example,
+        <code>&amp;lt;</code> represents a less-than sign.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-semibold">
+        2. How do I encode HTML entities in JavaScript?
+      </h4>
+      <p>
+        You can use this tool or use <code>textContent</code> or DOM-based
+        escaping to safely encode user input.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-semibold">
+        3. Why should developers encode HTML before rendering user input?
+      </h4>
+      <p>
+        To prevent malicious users from injecting scripts or markup that could
+        break your layout or cause security risks like XSS.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are HTML entities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "HTML entities are codes used to represent reserved characters in HTML that might otherwise be interpreted as code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I encode HTML entities in JavaScript?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "You can use this tool or use textContent or DOM-based escaping to safely encode user input."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should developers encode HTML before rendering user input?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Encoding HTML prevents malicious scripts or markup injection, helping protect your website from XSS vulnerabilities."
+          }
+        }
+      ]
+    })
+  }}
+/>
+
+
+     
     </ToolLayout>
   );
 }

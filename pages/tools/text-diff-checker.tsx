@@ -187,6 +187,171 @@ This line is newly added.`;
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+
+      <section className="mt-10 text-gray-300">
+  <h2 className="text-xl font-semibold mb-3 text-white">
+    What is a Text Diff Checker Tool?
+  </h2>
+  <p className="mb-4">
+    A <strong>Text Diff Checker</strong> is an online tool that helps you find
+    differences between two blocks of text. It visually highlights what’s been
+    <span className="text-green-400 font-semibold"> added</span> or{" "}
+    <span className="text-red-400 font-semibold">removed</span> — making it easy
+    to compare files, paragraphs, code snippets, or document versions. This
+    tool is especially useful for developers, writers, editors, and students who
+    need to review revisions or track content changes efficiently.
+  </p>
+
+  <h3 className="font-semibold text-white mb-2">
+    Why Use an Online Diff Checker?
+  </h3>
+  <ul className="list-disc list-inside mb-4 text-gray-300">
+    <li>
+      <strong>Code Review:</strong> Identify changes between two versions of
+      code easily.
+    </li>
+    <li>
+      <strong>Content Editing:</strong> Detect modifications between document
+      drafts.
+    </li>
+    <li>
+      <strong>Debugging:</strong> Compare log files, configuration changes, or
+      JSON/XML data.
+    </li>
+    <li>
+      <strong>Version Control:</strong> Preview differences before commits or
+      merges.
+    </li>
+  </ul>
+
+  <h3 className="font-semibold text-white mb-2">
+    Features of This Text Diff Tool
+  </h3>
+  <ul className="list-disc list-inside mb-4 text-gray-300">
+    <li>
+      <strong>Line-by-Line Comparison:</strong> Ideal for comparing multi-line
+      files or paragraphs.
+    </li>
+    <li>
+      <strong>Word-by-Word Comparison:</strong> Great for sentence-level or
+      detailed diff checking.
+    </li>
+    <li>
+      <strong>Side-by-Side View:</strong> Clearly view original text (A) and
+      modified text (B) together.
+    </li>
+    <li>
+      <strong>Privacy-Focused:</strong> Runs entirely in your browser — no data
+      is sent to any server.
+    </li>
+    <li>
+      <strong>Performance Optimized:</strong> Handles up to 10,000 characters
+      per input efficiently.
+    </li>
+  </ul>
+
+  <h3 className="font-semibold text-white mb-2">
+    How to Use the Text Diff Checker
+  </h3>
+  <ol className="list-decimal list-inside mb-4 text-gray-300 space-y-1">
+    <li>Paste or type your original text into the <strong>Text A</strong> box.</li>
+    <li>Enter your updated or revised text into the <strong>Text B</strong> box.</li>
+    <li>Select your preferred comparison mode: Line by Line or Word by Word.</li>
+    <li>Click <strong>Compare</strong> to instantly view the highlighted differences.</li>
+    <li>Added text is shown in <span className="text-green-400">green</span> and removed text in <span className="text-red-400">red</span>.</li>
+  </ol>
+
+  <h3 className="font-semibold text-white mb-2">
+    Frequently Asked Questions (FAQs)
+  </h3>
+  <div className="space-y-4">
+    <div>
+      <h4 className="font-semibold">
+        1. What does this text comparison tool do?
+      </h4>
+      <p>
+        It compares two text blocks and highlights the differences — showing
+        what’s been added, removed, or modified. Perfect for analyzing code or
+        written content.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-semibold">
+        2. Is my text stored or uploaded anywhere?
+      </h4>
+      <p>
+        No. This tool is fully client-side. All processing happens in your
+        browser — no data is sent or stored on any external server.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-semibold">
+        3. What’s the difference between line and word diff?
+      </h4>
+      <p>
+        Line diff compares entire lines, which is useful for code or
+        multi-paragraph text. Word diff compares at the word level for a more
+        detailed view of smaller changes.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="font-semibold">
+        4. Can I use this for comparing JSON or HTML?
+      </h4>
+      <p>
+        Yes. You can compare structured formats like JSON, XML, or HTML.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does this text comparison tool do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It compares two text blocks and highlights the differences — showing what’s been added, removed, or modified. Useful for analyzing code or written content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my text stored or uploaded anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This tool works entirely in your browser. Your input text never leaves your device, ensuring privacy and security."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What’s the difference between line and word diff?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Line diff compares full lines, while word diff shows detailed word-level changes. Choose based on your comparison needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this for comparing JSON or HTML?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can use it to compare structured text like JSON, XML, or HTML as long as it's within the input limit."
+          }
+        }
+      ]
+    })
+  }}
+/>
+
     </ToolLayout>
   );
 }

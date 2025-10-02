@@ -24,11 +24,11 @@ export default function ToolLayout({ tools, children }: Props) {
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <div className="flex">
         {/* Sidebar */}
-        <aside
-          className={`bg-gray-100 border-r w-64 p-4 transform transition-transform duration-300 ease-in-out ${
-            sidebarOpen ? "translate-x-0" : "-translate-x-full"
-          } md:translate-x-0 fixed md:relative z-40 h-full md:h-auto`}
-        >
+       <aside
+  className={`bg-gray-100 border-r w-64 p-4 transform transition-transform duration-300 ease-in-out ${
+    sidebarOpen ? "translate-x-0" : "-translate-x-full"
+  } md:translate-x-0 fixed md:relative z-40 h-full md:h-auto${sidebarOpen ? " overflow-y-auto" : ""}`}
+>
           <h2 className="text-lg text-black font-semibold mb-1">
               Tools
           </h2>
@@ -45,9 +45,7 @@ export default function ToolLayout({ tools, children }: Props) {
               </li>
             ))}
           </ul>
-          <div className="mt-8 p-4 bg-yellow-100 border border-yellow-300 text-center text-yellow-900 font-semibold text-base shadow rounded-lg">
-            [Sidebar Advertisement]
-          </div>
+         
         </aside>
 
         {/* Main content */}

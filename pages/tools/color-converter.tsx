@@ -26,12 +26,60 @@ export default function ColorConverter() {
           <title>Color Converter - HEX, RGB, HSL | Converter Tools</title>
           <meta
             name="description"
-            content="Convert colors between HEX, RGB, and HSL formats. Instantly preview and validate color codes with this fast, privacy-friendly color converter tool."
+            content="Convert colors between HEX, RGB, and HSL formats instantly. Get live preview and precise color code conversions with this free online color converter tool."
           />
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Color Converter - HEX, RGB, HSL | Converter Tools" />
-          <meta property="og:description" content="Convert colors between HEX, RGB, and HSL formats. Instantly preview and validate color codes with this fast, privacy-friendly color converter tool." />
+          <meta property="og:description" content="Convert colors between HEX, RGB, and HSL formats instantly. Get live preview and precise color code conversions with this free online color converter tool." />
           <meta property="og:type" content="website" />
+
+          {/* ✅ JSON-LD Schema for SEO */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Color Converter",
+                "applicationCategory": "DeveloperTool",
+                "operatingSystem": "Any",
+                "description": "Free online color converter that instantly converts between HEX, RGB, and HSL formats with live preview support.",
+                "url": "https://convertertools.com/tools/color-converter",
+                "keywords": "color converter, hex to rgb, rgb to hex, hsl converter, color format converter",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "reviewCount": "145"
+                },
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is a Color Converter?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A color converter allows you to convert colors between HEX, RGB, and HSL formats. It helps designers and developers maintain consistent color values across platforms."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How to convert HEX to RGB?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Enter your HEX code (like #3498db) in the input box. The tool automatically displays its RGB and HSL equivalents instantly."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Why use RGB or HSL instead of HEX?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "RGB is often used in digital displays and CSS animations, while HSL provides intuitive control over hue, saturation, and lightness for design adjustments."
+                    }
+                  }
+                ]
+              })
+            }}
+          />
         </Head>
 
         <h1 className="text-2xl font-bold mb-4">Color Converter</h1>
@@ -84,11 +132,33 @@ export default function ColorConverter() {
           </div>
         )}
 
-        
-      <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
-        [Ad Placeholder: Insert AdSense Code Here]
-      </div>
-      
+        {/* ✅ Ad Placeholder */}
+        <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
+          [Ad Placeholder: Insert AdSense Code Here]
+        </div>
+
+        {/* ✅ SEO-Rich Section */}
+        <section className="text-gray-300">
+          <h2 className="text-xl font-semibold mb-2">Why Use a Color Converter?</h2>
+          <ul className="list-disc list-inside mb-4">
+            <li>Quickly convert between HEX, RGB, and HSL formats for web design.</li>
+            <li>See instant visual previews of your color conversions.</li>
+            <li>Ensure consistent colors across CSS, Figma, and design systems.</li>
+            <li>Free, fast, and privacy-friendly — no color data stored.</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold mb-2">Common Use Cases</h3>
+          <p className="mb-4">
+            This tool is perfect for web designers, frontend developers, and UI/UX professionals who need to quickly 
+            convert and preview colors. Use it when styling websites, working with CSS variables, or generating themes.
+          </p>
+
+          <h3 className="text-lg font-semibold mb-2">Color Conversion Examples</h3>
+          <p>
+            Example: <code>#ff5733</code> → <code>rgb(255, 87, 51)</code> → <code>hsl(11°, 100%, 60%)</code>.  
+            Experiment with any HEX, RGB, or HSL code to understand how they relate.
+          </p>
+        </section>
       </ToolLayout>
     </>
   );

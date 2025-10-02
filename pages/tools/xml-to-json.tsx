@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Head from "next/head";
@@ -96,7 +96,7 @@ export default function XmlToJson() {
     setError("");
   };
 
-    const downloadJson = () => {
+  const downloadJson = () => {
     if (!jsonOutput) return;
 
     const blob = new Blob([jsonOutput], { type: "application/json" });
@@ -121,14 +121,21 @@ export default function XmlToJson() {
           name="description"
           content="Convert XML data to JSON format instantly with this free online tool. No ads, no tracking, just fast and reliable transformation."
         />
+        <meta
+          name="keywords"
+          content="XML to JSON, convert XML to JSON, free XML JSON converter, XML parser, data transformation, online XML JSON tool"
+        />
       </Head>
 
       <ToolLayout tools={tools}>
-        <h1 className="text-2xl font-bold mb-4">XML to JSON Converter</h1>
-        <p className="mb-6 text-gray-300 max-w-1xl">
-          Easily convert structured XML into readable, developer-friendly JSON
-          format. Supports attributes and nested tags. Great for debugging, API
-          testing, or data transformation.
+        <h1 className="text-lg font-bold mb-4">XML to JSON Converter</h1>
+        <p className="mb-6 text-gray-300 max-w-1xl text-sm">
+          Convert your XML data to clean, structured JSON with this fast and
+          free online XML to JSON converter. Whether you're working with REST
+          APIs, config files, or raw data, this tool simplifies your
+          transformation process. Supports nested elements, attributes, and text
+          nodes. No ads, no tracking – just privacy-friendly, developer-focused
+          conversion. Try it now!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -176,21 +183,20 @@ export default function XmlToJson() {
               placeholder="Converted JSON will appear here..."
             />
             {jsonOutput && (
-                <>
-              <button
-                onClick={copyToClipboard}
-                className="mt-2 mr-1.5 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
-              >
-                Copy
-              </button>
-               <button
-              onClick={downloadJson}
-              className="mt-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
-            >
-              Download
-            </button>
+              <>
+                <button
+                  onClick={copyToClipboard}
+                  className="mt-2 mr-1.5 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm"
+                >
+                  Copy
+                </button>
+                <button
+                  onClick={downloadJson}
+                  className="mt-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded text-sm"
+                >
+                  Download
+                </button>
               </>
-              
             )}
           </div>
         </div>
@@ -198,6 +204,34 @@ export default function XmlToJson() {
         <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
           [Ad Placeholder: Insert AdSense Code Here]
         </div>
+          <section className="mt-10 text-gray-300 leading-relaxed text-sm">
+          <h2 className="text-lg font-semibold mb-2">
+            About XML to JSON Conversion
+          </h2>
+          <p className="mb-2">
+            XML (Extensible Markup Language) is widely used for data exchange,
+            especially in web services and APIs. JSON (JavaScript Object
+            Notation) is a lightweight, readable data format commonly used in
+            modern applications. This free XML to JSON converter allows you to
+            quickly convert XML files or raw XML strings into JSON format. It
+            preserves nested structures and attributes without any extra bloat
+            or metadata.
+          </p>
+          <p className="mb-2">
+            Whether you're debugging an API response, processing configuration
+            files, or handling legacy data, this tool gives you a
+            developer-friendly JSON output you can use immediately. The
+            converter works entirely in your browser—your data never leaves your
+            device.
+          </p>
+          <p>
+            if you are looking for a JSON to XML converter, check out our{" "}
+            <a href="/tools/json-to-xml" className="text-blue-500 hover:underline">
+              JSON to XML Converter
+            </a>
+            .
+          </p>
+        </section>
       </ToolLayout>
     </>
   );

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Head from "next/head";
@@ -55,17 +55,38 @@ export default function JsonToYamlConverter() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>JSON to YAML Converter Online - Converter Tools</title>
+        <title>JSON to YAML Converter Online - Free & Instant</title>
         <meta
           name="description"
-          content="Convert JSON to YAML instantly online. Fast, privacy-friendly JSON to YAML converter with error handling and copy/download options. Free JSON to YAML tool with no login required."
+          content="Free online JSON to YAML converter. Convert your JSON data into readable YAML instantly. No login, no tracking. Copy or download YAML output easily."
+        />
+        <meta
+          name="keywords"
+          content="JSON to YAML, online converter, free tool, YAML output, JSON parser"
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/tools/json-to-yaml"
+        />
+        <meta property="og:title" content="JSON to YAML Converter Online" />
+        <meta
+          property="og:description"
+          content="Convert JSON to YAML format instantly with our
+free online tool. Easy to use, no registration required."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://yourdomain.com/tools/json-to-yaml"
         />
       </Head>
 
-      <h1 className="text-2xl font-bold mb-4">JSON to YAML Converter</h1>
-      <p className="text-gray-700 dark:text-gray-300 mb-6">
-        Easily convert JSON data to YAML format. Paste your JSON code below and click "Convert" to get YAML output.
-        You can also copy or download the result.
+      <h1 className="text-xl font-bold mb-4">JSON to YAML Converter</h1>
+      <p className="text-gray-700 dark:text-gray-300 mb-6 text-sm">
+        Easily convert JSON data to YAML format. Paste your JSON code below and
+        click "Convert" to get YAML output. You can also copy or download the
+        result.
       </p>
 
       <div className="flex flex-col md:flex-row gap-6">
@@ -98,7 +119,7 @@ export default function JsonToYamlConverter() {
               Reset
             </button>
           </div>
-           {error && <p className="text-red-500 mt-3">⚠️ {error}</p>}
+          {error && <p className="text-red-500 mt-3">⚠️ {error}</p>}
         </div>
 
         {/* YAML Output */}
@@ -131,6 +152,58 @@ export default function JsonToYamlConverter() {
 
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
+      </div>
+
+      <div className="mt-10 text-gray-300 text-sm">
+        <h2 className="text-lg font-semibold mb-2 text-white">
+          What is a JSON to YAML Converter?
+        </h2>
+        <p className="mb-4">
+          A JSON to YAML converter is a tool that transforms data from JSON
+          format to YAML format. Both are popular data serialization languages
+          used in configuration files, APIs, and backend systems.
+        </p>
+
+        <h3 className="font-semibold text-white mb-2">
+          Why Convert JSON to YAML?
+        </h3>
+        <ul className="list-disc list-inside mb-4">
+          <li>YAML is more human-readable and easier to edit than JSON.</li>
+          <li>Some applications and configuration files prefer YAML format.</li>
+          <li>
+            Converting to YAML can help with readability and organization of
+            complex data structures.
+          </li>
+        </ul>
+
+        <h3 className="font-semibold text-white mb-2">
+          Features of This Online JSON to YAML Tool
+        </h3>
+        <ul className="list-disc list-inside mb-4">
+          <li>Free and secure — no data is stored or uploaded.</li>
+          <li>Supports JSON arrays, nested structures, and objects.</li>
+          <li>Error handling for invalid JSON input.</li>
+          <li>Download converted YAML or copy to clipboard instantly.</li>
+          <li>One-click example data to try it out.</li>
+        </ul>
+
+        <p>
+          {" "}
+          You can also use the YAML to JSON converter for the reverse operation,
+          making it easy to switch between these two formats as needed.
+          <a
+            href="/tools/yaml-to-json"
+            className="text-blue-500 hover:underline"
+          >
+            Try the YAML to JSON Converter
+          </a>
+        </p>
+
+        <p>
+          Whether you're working with configuration files, API responses, or
+          data serialization, this JSON to YAML converter will help you easily
+          transform your data and integrate it into your development workflow.
+        </p>
       </div>
     </ToolLayout>
   );

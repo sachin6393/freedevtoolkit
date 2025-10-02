@@ -7,8 +7,8 @@ interface HeaderProps {
 
 export default function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
   return (
-    <header className=" top-0 z-50 bg-[#9ec5eb] border-b shadow px-4 py-3 flex items-center justify-between">
-      <Link href="/" className="text-xl font-bold text-black hover:text-gray-600">
+    <header className=" top-0 z-50 bg-[#090909] border-b shadow px-4 py-3 flex items-center justify-between">
+      <Link href="/" className="text-xl font-bold text-white hover:text-gray-600">
         🧰 FREEDEVTOOLKIT.COM
       </Link>
       <button

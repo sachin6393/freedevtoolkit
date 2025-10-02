@@ -14,7 +14,6 @@ export const toolList = [
   { name: "HTML Entities Encoder/Decoder", href: "/tools/html-entities" },
   { name :"UUID Generator", href: "/tools/uuid-generator" },
   { name: "SHA256 / MD5 Hash Generator", href: "/tools/hash-generator" },
-  // { name :"HMAC Generator", href: "/tools/hmac-generator" },
   { name :"Text Diff Checker", href: "/tools/text-diff-checker" },
   { name :"String / Word Counter", href: "/tools/string-word-counter" },
   { name :"Regex Tester", href: "/tools/regex-tester" },
@@ -22,4 +21,6 @@ export const toolList = [
   { name: "Number Base Converter", href: "/tools/number-base-converter" },
   { name: "Age Calculator", href: "/tools/age-calculator" },
   { name: "Typing Practice", href: "/fun/typing-practice" },
+  { name :"PX to REM & REM to PX Converter", href: "/tools/px-rem-converter" },
+  { name: "PX to EM & EM to PX Converter", href: "/tools/px-em-converter" },
 ];

@@ -135,7 +135,20 @@ const tools = [
     href: '/fun/typing-practice',
     description:
       'A fun typing practice tool to help improve your speed and accuracy. See real-time feedback as you type!'
-  }
+  },
+  {
+    name: 'PX to REM & REM to PX Converter',
+    href: '/tools/px-rem-converter',
+    description:
+      'Convert pixel values to REM units and vice versa for responsive web design. Input your base font size and get accurate values instantly.'
+  },
+  {
+    name: 'PX to EM & EM to PX Converter',
+    href: '/tools/px-em-converter',
+    description:
+      'Convert pixel values to EM units and vice versa for responsive web design. Input your base font size and get accurate values instantly.'
+  },
+
 ];
 
 export default function HomePage() {
@@ -169,10 +182,11 @@ export default function HomePage() {
           )}
         </div>
       ))}
-       <h1 className="text-1xl font-bold mb-6 text-center">2025 made by converter.com</h1>
-       {/* <footer className="bg-yellow-50 text-center text-sm p-4 border-t">
-  [Footer Ad Placeholder: Insert AdSense Code Here]
-</footer> */}
+
+       <footer className="mt-8 p-4 border-t text-center text-sm text-gray-600">
+        &copy; {new Date().getFullYear()} FreeDevToolKit. All rights reserved.
+      </footer>
+      
     </ToolLayout>
     </>
   );

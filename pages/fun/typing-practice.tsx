@@ -12,6 +12,13 @@ const sampleSentences = [
   "Practice makes perfect. Don't give up easily.\nEven slow progress is progress.",
   "Accuracy is more important than speed at first.\nLater, both will improve together.",
   "Typing is a foundational skill for developers.\nSharpen it a little every day.",
+  "Use all your fingers while typing.\nThis will increase your speed over time.",
+  "Take breaks to avoid strain.\nHealthy hands type better.",
+  "Set small goals for each practice session.\nCelebrate your improvements.",
+  "Try to type without looking at the screen.\nThis builds muscle memory.",
+  "Stay relaxed while typing.\nTension can lead to mistakes.",
+  "Explore different typing exercises online.\nVariety keeps practice interesting.",
+  "Use typing games to make practice fun.\nCompetition can boost motivation.",
 ];
 
 function getRandomSentence(): string {
@@ -64,13 +71,33 @@ export default function TypingPractice() {
 
   return (
     <ToolLayout tools={toolList}>
-      <Head>
-        <title>Typing Practice Tool - Just for Fun</title>
-        <meta
-          name="description"
-          content="A fun typing practice tool to help improve your speed and accuracy. See real-time feedback as you type!"
-        />
-      </Head>
+    <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a typing practice tool?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A typing practice tool helps users improve typing speed and accuracy by providing sentences to type with real-time feedback."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this typing practice tool work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply start typing the displayed sentence. Each character will show real-time feedback — green for correct, red for wrong, and yellow for pending."
+            }
+          }
+        ]
+      })
+    }}
+  />
 
       <h1 className="text-2xl font-bold mb-4">Typing Practice Tool</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -106,6 +133,21 @@ export default function TypingPractice() {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
+      <div className="mt-10 text-gray-300">
+  <h2 className="text-xl font-semibold mb-2">Why Practice Typing?</h2>
+  <p className="mb-4">
+    Typing practice helps you type faster and more accurately, improving productivity and focus.
+    It’s a useful skill for developers, writers, and students alike.
+  </p>
+
+  <h3 className="font-semibold mb-2">How This Tool Helps</h3>
+  <ul className="list-disc list-inside text-gray-200">
+    <li>Real-time color-coded feedback</li>
+    <li>Random sentences for diverse typing experience</li>
+    <li>Encourages accuracy before speed</li>
+  </ul>
+</div>
+
     </ToolLayout>
   );
 }
