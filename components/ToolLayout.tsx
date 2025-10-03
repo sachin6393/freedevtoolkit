@@ -20,17 +20,17 @@ export default function ToolLayout({ tools, children }: Props) {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col h-screen">
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <div className="flex">
+      <div className="flex flex-1 h-0">
         {/* Sidebar */}
-       <aside
-  className={`bg-gray-100 border-r w-64 p-4 transform transition-transform duration-300 ease-in-out ${
-    sidebarOpen ? "translate-x-0" : "-translate-x-full"
-  } md:translate-x-0 fixed md:relative z-40 h-full md:h-auto${sidebarOpen ? " overflow-y-auto" : ""}`}
->
+        <aside
+          className={`bg-gray-100 border-r w-60 p-4 transform transition-transform duration-300 ease-in-out ${
+            sidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } md:translate-x-0 fixed md:relative z-40 h-full overflow-y-auto`}
+        >
           <h2 className="text-lg text-black font-semibold mb-1">
-              Tools
+            Tools
           </h2>
           <div className="w-full h-1 mb-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow"></div>
           <ul className="space-y-2">
@@ -45,11 +45,12 @@ export default function ToolLayout({ tools, children }: Props) {
               </li>
             ))}
           </ul>
-         
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 px-6 py-8" key={router.pathname} >{children}</main>
+        <main className="flex-1 px-6 py-8 h-full overflow-auto" key={router.pathname}>
+          {children}
+        </main>
       </div>
     </div>
   );

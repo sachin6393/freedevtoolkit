@@ -189,7 +189,7 @@ export default function BaseConverter() {
           </p>
 
           <h3 className="font-semibold text-white mb-2">Common Base Conversions</h3>
-          <ul className="list-disc list-inside mb-4 text-gray-400">
+          <ul className="list-disc list-inside mb-4 text-gray-300">
             <li>Binary (Base 2) ↔ Decimal (Base 10)</li>
             <li>Decimal (Base 10) ↔ Hexadecimal (Base 16)</li>
             <li>Binary (Base 2) ↔ Hexadecimal (Base 16)</li>
