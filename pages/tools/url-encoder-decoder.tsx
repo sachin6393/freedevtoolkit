@@ -48,34 +48,46 @@ export default function UrlEncoderDecoder() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>
-          URL Encoder & Decoder Online - Free Instant Converter Tool
-        </title>
-        <meta
-          name="description"
-          content="Encode or decode URLs instantly with this free online URL Encoder & Decoder tool. Fast, secure, and easy to use. No login or ads required."
-        />
-        <meta
-          name="keywords"
-          content="URL encoder, URL decoder, online tool, encode URL, decode URL"
-        />
-        <meta
-          property="og:title"
-          content="URL Encoder & Decoder Online - Free Instant Converter Tool"
-        />
-        <meta
-          property="og:description"
-          content="Free tool to encode or decode URL strings instantly. Secure, fast, and privacy-friendly. No login, no data tracking."
-        />
+        <title>free URL Encoder & Decoder Online - Free Instant url encoder decoder Tool</title>
+        <meta name="description" content="Encode or decode URLs instantly with this free online URL Encoder & Decoder tool. Fast, secure, and easy to use. No login or ads required." />
+        <meta name="keywords" content="URL encoder, URL decoder, online tool, encode URL, decode URL, percent encoding, web developer tools" />
+        <meta name="author" content="DevToolbox" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/url-encoder-decoder" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="URL Encoder & Decoder Online - Free Instant Converter Tool" />
+        <meta property="og:description" content="Encode or decode URLs instantly with this free online URL Encoder & Decoder tool. Fast, secure, and easy to use. No login or ads required." />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://yourdomain.com/url-encoder-decoder"
-        />
-        <link
-          rel="canonical"
-          href="https://yourdomain.com/url-encoder-decoder"
-        />
+        <meta property="og:url" content="https://yourdomain.com/tools/url-encoder-decoder" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="URL Encoder & Decoder Online - Free Instant Converter Tool" />
+        <meta name="twitter:description" content="Encode or decode URLs instantly with this free online URL Encoder & Decoder tool. Fast, secure, and easy to use. No login or ads required." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "URL Encoder & Decoder",
+        "url": "https://yourdomain.com/tools/url-encoder-decoder",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Encode or decode URLs instantly with this free online URL Encoder & Decoder tool. Fast, secure, and easy to use. No login or ads required.",
+        "featureList": [
+          "Encode text to URL-safe format",
+          "Decode percent-encoded URLs",
+          "Copy results to clipboard",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">URL Encoder / Decoder</h1>
@@ -96,11 +108,10 @@ export default function UrlEncoderDecoder() {
         >
           <span
             className={`w-14 h-7 flex items-center rounded-full p-1 duration-300 ease-in-out
-        ${
-          mode === "encode"
-            ? "bg-gradient-to-r from-green-400 to-green-700 shadow-green-500/40 shadow-md"
-            : "bg-gradient-to-r from-pink-500 to-purple-700 shadow-purple-500/40 shadow-md"
-        }`}
+        ${mode === "encode"
+                ? "bg-gradient-to-r from-green-400 to-green-700 shadow-green-500/40 shadow-md"
+                : "bg-gradient-to-r from-pink-500 to-purple-700 shadow-purple-500/40 shadow-md"
+              }`}
           >
             <span
               className={`bg-white w-5 h-5 rounded-full shadow-lg transform duration-300 ease-in-out

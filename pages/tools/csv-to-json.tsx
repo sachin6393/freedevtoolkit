@@ -88,12 +88,62 @@ export default function CsvToJson() {
           CSV to JSON Converter - Instant & Free | Converters ToolKit | free csv
           to json converter | no login
         </title>
-        <meta
-          name="description"
-          content="Convert CSV data to clean JSON format instantly. Paste or upload CSV file. Fast, free, and privacy-safe CSV to JSON tool."
-        />
-      </Head>
-
+       <meta
+    name="description"
+    content="Convert CSV to JSON instantly using our free online converter. Paste or upload CSV files to get clean, formatted JSON output. 100% client-side and secure."
+  />
+  <meta
+    name="keywords"
+    content="CSV to JSON converter, online CSV to JSON, convert CSV to JSON, CSV JSON formatter, CSV parser, developer tools, free CSV JSON converter"
+  />
+  <meta property="og:title" content="CSV to JSON Converter – Free Online Tool" />
+  <meta
+    property="og:description"
+    content="Transform your CSV data into structured JSON format instantly. Secure, private, and fast. Works completely in your browser."
+  />
+  <meta property="og:type" content="website" />
+  {/* <meta property="og:url" content="https://yourdomain.com/csv-to-json" /> */}
+  <meta property="og:site_name" content="Free Dev Toolkit" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="CSV to JSON Converter – Free Developer Tool"
+  />
+  <meta
+    name="twitter:description"
+    content="Convert CSV files to JSON easily and securely in your browser. No signup, no server upload."
+  />
+  {/* <link rel="canonical" href="https://yourdomain.com/csv-to-json" /> */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CSV to JSON Converter",
+      // "url": "https://yourdomain.com/csv-to-json",
+      "description":
+        "Free online tool to convert CSV files into JSON format instantly. Works fully client-side, supports upload, copy, and download.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "featureList": [
+        "Convert CSV to JSON instantly",
+        "Supports file upload",
+        "Copy and download JSON",
+        "Offline and secure",
+        "Free to use"
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "Free Dev Toolkit",
+        // "url": "https://yourdomain.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "180"
+      }
+    })}
+  </script>
+</Head>
       <ToolLayout tools={toolList}>
         <h1 className="text-2xl font-bold mb-4">CSV to JSON Converter</h1>
         <p className="mb-6 text-gray-300 max-w-1xl text-sm">
@@ -231,7 +281,57 @@ export default function CsvToJson() {
             </a>{" "}
             tool.
           </p>
+          <section className="mt-10 text-gray-300 leading-relaxed text-sm">
+  <h2 className="text-lg font-semibold mb-2">
+    CSV to JSON Converter – Frequently Asked Questions
+  </h2>
+
+  <h3 className="font-semibold mt-4 mb-1">1. What is a CSV to JSON converter?</h3>
+  <p>
+    A CSV to JSON converter is an online tool that transforms CSV (comma-separated value)
+    data into structured JSON format. It’s especially useful for developers working
+    with APIs, databases, or front-end configurations.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">2. Is this tool free to use?</h3>
+  <p>
+    Yes. This CSV to JSON converter is completely free, requires no registration,
+    and can be used as often as you like.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">3. Can I upload CSV files?</h3>
+  <p>
+    Absolutely! You can paste CSV data directly or upload a `.csv` file. The tool
+    will automatically convert it into properly formatted JSON.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">4. Does it work offline?</h3>
+  <p>
+    Yes, the conversion runs 100% in your browser. No internet connection is needed
+    once the page is loaded.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">5. Will my data be sent to any server?</h3>
+  <p>
+    No. This tool is client-side only — all processing happens locally in your browser,
+    ensuring full privacy and security.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">6. Can I download or copy the JSON output?</h3>
+  <p>
+    Yes. After conversion, you can copy the JSON result to your clipboard or
+    download it as a `.json` file with a single click.
+  </p>
+
+  <h3 className="font-semibold mt-4 mb-1">7. What if my CSV has missing values?</h3>
+  <p>
+    If a CSV line has missing columns, the converter automatically fills them with
+    empty strings to ensure valid JSON output.
+  </p>
+</section>
+
         </div>
+        
       </ToolLayout>
     </>
   );

@@ -71,6 +71,30 @@ export default function CsvToXml() {
     }
   };
 
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "CSV to XML Converter",
+    // url: "https://yourdomain.com/tools/csv-to-xml",
+    applicationCategory: "UtilityApplication",
+    operatingSystem: "All",
+    description:
+      "Free online CSV to XML Converter tool that converts CSV files to clean XML instantly. Upload or paste CSV, get formatted XML output easily.",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    featureList: [
+      "Free CSV to XML conversion",
+      "Supports file upload and paste input",
+      "Fast and accurate conversion",
+      "Copy and download XML output",
+      "No login required",
+    ],
+  };
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -111,16 +135,22 @@ export default function CsvToXml() {
           content="CSV to XML, convert CSV to XML, online CSV converter, free CSV to XML tool, structured XML output"
         />
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://yourdomain.com/csv-to-xml-converter"
-        />
+        {/* <link rel="canonical" href="https://yourdomain.com/tools/csv-to-xml" /> */}
         <meta property="og:title" content="CSV to XML Converter Online" />
         <meta
           property="og:description"
           content="Easily convert CSV files to XML format with our free online tool. Upload files or paste data for instant conversion."
         />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://yourdomain.com/tools/csv-to-xml" /> */}
+        <meta property="og:site_name" content="Converters Toolkit" />
+        <meta property="og:locale" content="en_US" />
+
+       
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
       </Head>
 
       <ToolLayout tools={tools}>

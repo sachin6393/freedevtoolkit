@@ -14,26 +14,6 @@ export default function StringWordCounter() {
   const charCountWithSpaces = text.length;
   const charCountWithoutSpaces = text.replace(/\s/g, "").length;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "String / Word Counter",
-    applicationCategory: "DeveloperApplication",
-    operatingSystem: "All",
-    description:
-      "Free online String / Word Counter that counts words and characters (with or without spaces) instantly in your browser.",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-    creator: {
-      "@type": "Organization",
-      name: "Your Website Name",
-      url: "https://yourwebsite.com",
-    },
-  };
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -76,20 +56,56 @@ export default function StringWordCounter() {
       },
     ],
   };
-  
+
 
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>String / Word Counter - Count Characters & Words Online</title>
-        <meta
-          name="description"
-          content="Free String / Word Counter that accurately counts words and characters (with or without spaces). Use this fast, minimal, browser-based tool to analyze your text."
-        />
-        <meta
-          name="keywords"
-          content="string counter, word counter, character counter, count words online, count characters online, free word counter tool"
-        />
+        <title>String / Word Counter Online – Free Character & Word Count Tool</title>
+        <meta name="description" content="Free online String / Word Counter that instantly counts words and characters (with or without spaces) in your browser. Perfect for essays, tweets, and articles." />
+        <meta name="keywords" content="string counter, word counter, character counter, count words online, count characters online, free word counter tool, essay word count, tweet character count" />
+        <meta name="author" content="DevToolbox" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/string-word-counter" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="String / Word Counter Online – Free Character & Word Count Tool" />
+        <meta property="og:description" content="Free online String / Word Counter that instantly counts words and characters (with or without spaces) in your browser. Perfect for essays, tweets, and articles." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/string-word-counter" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="String / Word Counter Online – Free Character & Word Count Tool" />
+        <meta name="twitter:description" content="Free online String / Word Counter that instantly counts words and characters (with or without spaces) in your browser. Perfect for essays, tweets, and articles." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "String / Word Counter",
+        "url": "https://yourdomain.com/tools/string-word-counter",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Free online String / Word Counter that instantly counts words and characters (with or without spaces) in your browser. Perfect for essays, tweets, and articles.",
+        "featureList": [
+          "Instant word and character count",
+          "Counts with and without spaces",
+          "No login or signup required",
+          "Client-side only – privacy-friendly",
+          "Free and easy to use"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
+        {/* FAQ Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">String / Word Counter</h1>
@@ -130,7 +146,7 @@ export default function StringWordCounter() {
       <div className="my-8 p-4 border rounded bg-yellow-50 text-center text-sm text-gray-600">
         [Ad Placeholder: Insert AdSense Code Here]
       </div>
-       <section className="mt-10 text-gray-300 leading-relaxed">
+      <section className="mt-10 text-gray-300 leading-relaxed">
         <h2 className="text-xl font-semibold mb-2">
           About This String / Word Counter Tool
         </h2>

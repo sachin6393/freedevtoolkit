@@ -41,32 +41,49 @@ export default function RegexTester() {
     <>
       <ToolLayout tools={toolList}>
         <Head>
-          <title>Online Regex Tester & Validator - Converter Tools</title>
-          <meta
-            name="description"
-            content="Test and debug regular expressions online. Instantly validate regex patterns, check flags like i, g, m, s, and see matches in real-time. Free regex tester for developers."
-          />
+          <title>Online Regex Tester & Validator – Free Regular Expression Tool</title>
+          <meta name="description" content="Test and debug regular expressions online. Instantly validate regex patterns, check flags like i, g, m, s, and see matches in real-time. Free regex tester for developers." />
+          <meta name="keywords" content="regex tester, regular expression, regex validator, online regex tool, regex flags, pattern matching, developer tools" />
+          <meta name="author" content="FreeDevToolKit" />
           <meta name="robots" content="index, follow" />
-          <meta property="og:title" content="Online Regex Tester & Validator - Converter Tools" />
+          <link rel="canonical" href="https://yourdomain.com/tools/regex-tester" />
+          {/* Open Graph tags */}
+          <meta property="og:title" content="Online Regex Tester & Validator – Free Regular Expression Tool" />
           <meta property="og:description" content="Test and debug regular expressions online. Instantly validate regex patterns, check flags like i, g, m, s, and see matches in real-time. Free regex tester for developers." />
           <meta property="og:type" content="website" />
-
-          {/* ✅ JSON-LD for FAQ & Tool Info */}
+          <meta property="og:url" content="https://yourdomain.com/tools/regex-tester" />
+          {/* Twitter Card tags */}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content="Online Regex Tester & Validator – Free Regular Expression Tool" />
+          <meta name="twitter:description" content="Test and debug regular expressions online. Instantly validate regex patterns, check flags like i, g, m, s, and see matches in real-time. Free regex tester for developers." />
+          {/* JSON-LD WebApplication Structured Data */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
+              "@type": "WebApplication",
               "name": "Regex Tester & Validator",
+              "url": "https://yourdomain.com/tools/regex-tester",
               "applicationCategory": "DeveloperTool",
-              "operatingSystem": "Any",
+              "operatingSystem": "All",
               "description": "A free online regex tester that allows developers to test, debug, and validate regular expressions instantly.",
-              "url": "https://convertertools.com/tools/regex-tester",
-              "keywords": "regex tester, regular expression, regex validator, online regex tool",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "120"
-              },
+              "featureList": [
+                "Test and validate regex patterns",
+                "Toggle flags: i, g, m, s",
+                "Instant match results",
+                "Free and privacy-friendly"
+              ],
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            })
+          }} />
+          {/* JSON-LD FAQ Structured Data */}
+          <script type="application/ld+json" dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
               "mainEntity": [
                 {
                   "@type": "Question",
@@ -99,7 +116,7 @@ export default function RegexTester() {
 
         <h1 className="text-2xl font-bold mb-4">Regex Tester & Validator</h1>
         <p className="mb-6 text-gray-300 max-w-1xl">
-          This tool allows you to test and validate regular expressions in real-time. 
+          This tool allows you to test and validate regular expressions in real-time.
           Enter your regex pattern and a test string to see if they match. You can also toggle flags like case-insensitive, global, and multiline to customize the behavior of your regex.
         </p>
 
@@ -179,7 +196,7 @@ export default function RegexTester() {
 
           <h3 className="text-lg font-semibold mb-2">Learn Regex Quickly</h3>
           <p>
-            Not sure where to start? Try patterns like <code>^[a-z]+$</code> for lowercase validation or 
+            Not sure where to start? Try patterns like <code>^[a-z]+$</code> for lowercase validation or
             <code>\d{3}-\d{2}-\d{4}</code> for numeric formats. Experiment freely and learn by doing!
           </p>
         </section>

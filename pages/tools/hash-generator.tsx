@@ -44,11 +44,46 @@ export default function HashGenerator() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>SHA256 / MD5 Hash Generator - Online Hashing Tool</title>
-        <meta
-          name="description"
-          content="Generate SHA256 or MD5 hashes from text online. Use our secure, fast hash generator tool to create and copy cryptographic hashes instantly."
-        />
+        <title>SHA256 / MD5 Hash Generator Online – Free & Secure Hashing Tool</title>
+        <meta name="description" content="Generate SHA256 or MD5 hashes from text online. Secure, fast, and privacy-friendly hash generator for password hashing, file integrity, and more." />
+        <meta name="keywords" content="SHA256 hash generator, MD5 hash generator, online hashing tool, cryptographic hash, password hashing, file integrity, free hash generator, secure hash tool" />
+        <meta name="author" content="DevToolbox" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/hash-generator" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="SHA256 / MD5 Hash Generator Online – Free & Secure Hashing Tool" />
+        <meta property="og:description" content="Generate SHA256 or MD5 hashes from text online. Secure, fast, and privacy-friendly hash generator for password hashing, file integrity, and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/hash-generator" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="SHA256 / MD5 Hash Generator Online – Free & Secure Hashing Tool" />
+        <meta name="twitter:description" content="Generate SHA256 or MD5 hashes from text online. Secure, fast, and privacy-friendly hash generator for password hashing, file integrity, and more." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SHA256 / MD5 Hash Generator",
+        "url": "https://yourdomain.com/tools/hash-generator",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Generate SHA256 or MD5 hashes from text online. Secure, fast, and privacy-friendly hash generator for password hashing, file integrity, and more.",
+        "featureList": [
+          "Generate SHA256 and MD5 hashes",
+          "Copy and download hash output",
+          "Client-side only – privacy-friendly",
+          "Free and easy to use"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">SHA256 / MD5 Hash Generator</h1>
@@ -114,158 +149,158 @@ export default function HashGenerator() {
       </div>
 
       <section className="mt-10 text-gray-300">
-  <h2 className="text-xl font-semibold mb-3 text-white">
-    What is a Hash Generator Tool?
-  </h2>
-  <p className="mb-4">
-    A hash generator is a cryptographic tool that converts plain text into a
-    fixed-length string of characters. Hashing is a one-way operation — meaning
-    once data is hashed, it cannot be reversed to retrieve the original input.
-    Developers use hashing algorithms like <strong>SHA-256</strong> and{" "}
-    <strong>MD5</strong> to ensure data integrity, verify passwords, and detect
-    tampering in files or APIs.
-  </p>
+        <h2 className="text-xl font-semibold mb-3 text-white">
+          What is a Hash Generator Tool?
+        </h2>
+        <p className="mb-4">
+          A hash generator is a cryptographic tool that converts plain text into a
+          fixed-length string of characters. Hashing is a one-way operation — meaning
+          once data is hashed, it cannot be reversed to retrieve the original input.
+          Developers use hashing algorithms like <strong>SHA-256</strong> and{" "}
+          <strong>MD5</strong> to ensure data integrity, verify passwords, and detect
+          tampering in files or APIs.
+        </p>
 
-  <h3 className="font-semibold text-white mb-2">
-    SHA-256 vs MD5 — What’s the Difference?
-  </h3>
-  <table className="w-full text-sm border border-gray-700 text-left mb-6">
-    <thead className="bg-gray-800 text-gray-100">
-      <tr>
-        <th className="px-3 py-2 border border-gray-700">Feature</th>
-        <th className="px-3 py-2 border border-gray-700">SHA-256</th>
-        <th className="px-3 py-2 border border-gray-700">MD5</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td className="px-3 py-2 border border-gray-700">Hash Length</td>
-        <td className="px-3 py-2 border border-gray-700">64 characters</td>
-        <td className="px-3 py-2 border border-gray-700">32 characters</td>
-      </tr>
-      <tr>
-        <td className="px-3 py-2 border border-gray-700">Algorithm Type</td>
-        <td className="px-3 py-2 border border-gray-700">SHA-2 Family</td>
-        <td className="px-3 py-2 border border-gray-700">MD (Message Digest)</td>
-      </tr>
-      <tr>
-        <td className="px-3 py-2 border border-gray-700">Security</td>
-        <td className="px-3 py-2 border border-gray-700">
-          Highly secure, collision-resistant
-        </td>
-        <td className="px-3 py-2 border border-gray-700">
-          Weak, vulnerable to collisions
-        </td>
-      </tr>
-      <tr>
-        <td className="px-3 py-2 border border-gray-700">Use Cases</td>
-        <td className="px-3 py-2 border border-gray-700">
-          Password hashing, blockchain, digital signatures
-        </td>
-        <td className="px-3 py-2 border border-gray-700">
-          File checksums, legacy systems, quick integrity checks
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <h3 className="font-semibold text-white mb-2">
+          SHA-256 vs MD5 — What’s the Difference?
+        </h3>
+        <table className="w-full text-sm border border-gray-700 text-left mb-6">
+          <thead className="bg-gray-800 text-gray-100">
+            <tr>
+              <th className="px-3 py-2 border border-gray-700">Feature</th>
+              <th className="px-3 py-2 border border-gray-700">SHA-256</th>
+              <th className="px-3 py-2 border border-gray-700">MD5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="px-3 py-2 border border-gray-700">Hash Length</td>
+              <td className="px-3 py-2 border border-gray-700">64 characters</td>
+              <td className="px-3 py-2 border border-gray-700">32 characters</td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2 border border-gray-700">Algorithm Type</td>
+              <td className="px-3 py-2 border border-gray-700">SHA-2 Family</td>
+              <td className="px-3 py-2 border border-gray-700">MD (Message Digest)</td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2 border border-gray-700">Security</td>
+              <td className="px-3 py-2 border border-gray-700">
+                Highly secure, collision-resistant
+              </td>
+              <td className="px-3 py-2 border border-gray-700">
+                Weak, vulnerable to collisions
+              </td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2 border border-gray-700">Use Cases</td>
+              <td className="px-3 py-2 border border-gray-700">
+                Password hashing, blockchain, digital signatures
+              </td>
+              <td className="px-3 py-2 border border-gray-700">
+                File checksums, legacy systems, quick integrity checks
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-  <h3 className="font-semibold text-white mb-2">
-    Why Use a SHA-256 or MD5 Hash Generator?
-  </h3>
-  <ul className="list-disc list-inside mb-4 text-gray-300">
-    <li>Verify file integrity after download or upload</li>
-    <li>Store passwords securely using one-way hashing</li>
-    <li>Ensure consistency across APIs and data transfers</li>
-    <li>Detect changes in content or configuration files</li>
-  </ul>
+        <h3 className="font-semibold text-white mb-2">
+          Why Use a SHA-256 or MD5 Hash Generator?
+        </h3>
+        <ul className="list-disc list-inside mb-4 text-gray-300">
+          <li>Verify file integrity after download or upload</li>
+          <li>Store passwords securely using one-way hashing</li>
+          <li>Ensure consistency across APIs and data transfers</li>
+          <li>Detect changes in content or configuration files</li>
+        </ul>
 
-  <h3 className="font-semibold text-white mb-2">
-    How Does This Online Hash Generator Work?
-  </h3>
-  <p className="mb-4">
-    Simply enter any text, select your preferred algorithm (SHA-256 or MD5),
-    and click <strong>Generate Hash</strong>. The tool runs entirely in your
-    browser, meaning your data never leaves your device — ensuring complete
-    privacy and security. You can easily copy the hash result to use in your
-    applications or documentation.
-  </p>
+        <h3 className="font-semibold text-white mb-2">
+          How Does This Online Hash Generator Work?
+        </h3>
+        <p className="mb-4">
+          Simply enter any text, select your preferred algorithm (SHA-256 or MD5),
+          and click <strong>Generate Hash</strong>. The tool runs entirely in your
+          browser, meaning your data never leaves your device — ensuring complete
+          privacy and security. You can easily copy the hash result to use in your
+          applications or documentation.
+        </p>
 
-  <h3 className="font-semibold text-white mb-2">
-    Frequently Asked Questions
-  </h3>
-  <div className="space-y-4">
-    <div>
-      <h4 className="font-semibold">
-        1. Can I reverse a SHA-256 or MD5 hash back to text?
-      </h4>
-      <p>
-        No, hashing is a one-way function. It’s designed to be irreversible,
-        meaning you cannot retrieve the original text from the hash value.
-      </p>
-    </div>
+        <h3 className="font-semibold text-white mb-2">
+          Frequently Asked Questions
+        </h3>
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold">
+              1. Can I reverse a SHA-256 or MD5 hash back to text?
+            </h4>
+            <p>
+              No, hashing is a one-way function. It’s designed to be irreversible,
+              meaning you cannot retrieve the original text from the hash value.
+            </p>
+          </div>
 
-    <div>
-      <h4 className="font-semibold">
-        2. Which algorithm should I use — SHA-256 or MD5?
-      </h4>
-      <p>
-        For modern security and password storage, always use{" "}
-        <strong>SHA-256</strong>. MD5 is faster but outdated and vulnerable to
-        collisions.
-      </p>
-    </div>
+          <div>
+            <h4 className="font-semibold">
+              2. Which algorithm should I use — SHA-256 or MD5?
+            </h4>
+            <p>
+              For modern security and password storage, always use{" "}
+              <strong>SHA-256</strong>. MD5 is faster but outdated and vulnerable to
+              collisions.
+            </p>
+          </div>
 
-    <div>
-      <h4 className="font-semibold">
-        3. Is this hash generator secure?
-      </h4>
-      <p>
-        Yes. This tool performs hashing client-side using{" "}
-        <strong>Web Crypto API</strong> and <strong>CryptoJS</strong>. No data
-        is sent to any server, ensuring your input remains private.
-      </p>
-    </div>
-  </div>
-</section>
+          <div>
+            <h4 className="font-semibold">
+              3. Is this hash generator secure?
+            </h4>
+            <p>
+              Yes. This tool performs hashing client-side using{" "}
+              <strong>Web Crypto API</strong> and <strong>CryptoJS</strong>. No data
+              is sent to any server, ensuring your input remains private.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I reverse a SHA-256 or MD5 hash back to text?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "No, hashing is a one-way function. It’s designed to be irreversible, meaning you cannot retrieve the original text from the hash value."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which algorithm should I use — SHA-256 or MD5?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "For modern security and password storage, SHA-256 is recommended. MD5 is faster but less secure and vulnerable to collisions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is this hash generator secure?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text":
-              "Yes. This tool uses client-side Web Crypto API and CryptoJS for hashing, ensuring no data is sent to external servers."
-          }
-        }
-      ]
-    })
-  }}
-/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I reverse a SHA-256 or MD5 hash back to text?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "No, hashing is a one-way function. It’s designed to be irreversible, meaning you cannot retrieve the original text from the hash value."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which algorithm should I use — SHA-256 or MD5?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "For modern security and password storage, SHA-256 is recommended. MD5 is faster but less secure and vulnerable to collisions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this hash generator secure?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "Yes. This tool uses client-side Web Crypto API and CryptoJS for hashing, ensuring no data is sent to external servers."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
     </ToolLayout>
   );

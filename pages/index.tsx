@@ -154,10 +154,74 @@ const tools = [
 export default function HomePage() {
   return (
     <>
-        <Head>
-        <title>Free Online Tools & Format Converters | Converters Toolkit</title>
-        <meta name="description" content="Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly." />
-      </Head>
+       <Head>
+  <title>Free Online Tools & Format Converters | FreeDevToolkit</title>
+  <meta name="description" content="Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly." />
+  <meta name="keywords" content="online tools, format converters, epoch to date, xml to json, json to xml, csv converter, yaml converter, developer tools, free tools, privacy-friendly" />
+  <meta name="author" content="FreeDevToolKit" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  {/* Open Graph tags */}
+  <meta property="og:title" content="Free Online Tools & Format Converters | Converters Toolkit" />
+  <meta property="og:description" content="Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  {/* Twitter Card tags */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Free Online Tools & Format Converters | Converters Toolkit" />
+  <meta name="twitter:description" content="Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly." />
+  {/* JSON-LD WebSite Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FreeDevToolKit",
+        "url": "https://yourdomain.com/",
+        "description": "Fast, free online tools like Epoch to Date, XML/JSON/YAML/CSV converters, built for developers & analysts. Privacy-friendly.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FreeDevToolKit"
+        }
+      }
+    `}
+  </script>
+  {/* JSON-LD FAQ Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these tools free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all tools on FreeDevToolKit are completely free and privacy-friendly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to sign up to use these tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No registration or login is required. All tools are available instantly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all tools work entirely in your browser and do not send your data to any server."
+            }
+          }
+        ]
+      }
+    `}
+  </script>
+</Head>
     <ToolLayout tools={tools}>
       <h1 className="text-3xl font-extrabold mb-2 text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg">
                 🚀 List of Tools

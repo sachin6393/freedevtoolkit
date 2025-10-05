@@ -43,22 +43,47 @@ export default function BaseConverter() {
     <>
       <ToolLayout tools={toolList}>
         <Head>
-          <title>Base Converter - Binary, Decimal, Octal, Hexadecimal | Converter Tools</title>
-          <meta
-            name="description"
-            content="Easily convert numbers between binary, decimal, octal, and hexadecimal formats. A fast, accurate, and developer-friendly base converter tool for quick conversions."
-          />
+          <title>Number Base Converter – Binary, Decimal, Octal, Hex | Free Online Tool</title>
+          <meta name="description" content="Convert numbers between binary, decimal, octal, and hexadecimal formats instantly. Free, fast, and developer-friendly base converter tool for quick and accurate conversions." />
+          <meta name="keywords" content="base converter, number base converter, binary to decimal, decimal to hex, octal converter, hexadecimal converter, online base converter, developer tools" />
+          <meta name="author" content="DevToolbox" />
           <meta name="robots" content="index, follow" />
-          <meta
-            property="og:title"
-            content="Base Converter - Binary, Decimal, Octal, Hexadecimal | Converter Tools"
-          />
-          <meta
-            property="og:description"
-            content="Easily convert numbers between binary, decimal, octal, and hexadecimal formats. Fast and accurate base converter tool for developers and students."
-          />
+          <link rel="canonical" href="https://yourdomain.com/tools/number-base-converter" />
+          {/* Open Graph tags */}
+          <meta property="og:title" content="Number Base Converter – Binary, Decimal, Octal, Hex | Free Online Tool" />
+          <meta property="og:description" content="Convert numbers between binary, decimal, octal, and hexadecimal formats instantly. Free, fast, and developer-friendly base converter tool for quick and accurate conversions." />
           <meta property="og:type" content="website" />
-
+          <meta property="og:url" content="https://yourdomain.com/tools/number-base-converter" />
+          {/* Twitter Card tags */}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content="Number Base Converter – Binary, Decimal, Octal, Hex | Free Online Tool" />
+          <meta name="twitter:description" content="Convert numbers between binary, decimal, octal, and hexadecimal formats instantly. Free, fast, and developer-friendly base converter tool for quick and accurate conversions." />
+          {/* JSON-LD WebApplication Structured Data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Number Base Converter",
+                "url": "https://yourdomain.com/tools/number-base-converter",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "All",
+                "description": "Convert numbers between binary, decimal, octal, and hexadecimal formats instantly. Free, fast, and developer-friendly base converter tool for quick and accurate conversions.",
+                "featureList": [
+                  "Convert between binary, decimal, octal, and hexadecimal",
+                  "Instant conversion",
+                  "Copy results to clipboard",
+                  "Free and privacy-friendly"
+                ],
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              })
+            }}
+          />
           {/* FAQ Schema for SEO Rich Results */}
           <script
             type="application/ld+json"
@@ -183,8 +208,8 @@ export default function BaseConverter() {
         <div className="mt-10 text-gray-300">
           <h2 className="text-xl font-semibold mb-2">Why Use a Base Converter?</h2>
           <p className="mb-4">
-            In computer science and programming, different numeral systems like binary, octal, 
-            decimal, and hexadecimal are widely used. Converting between these systems manually can 
+            In computer science and programming, different numeral systems like binary, octal,
+            decimal, and hexadecimal are widely used. Converting between these systems manually can
             be error-prone. A base converter helps you perform accurate and instant conversions.
           </p>
 
@@ -198,8 +223,8 @@ export default function BaseConverter() {
 
           <h3 className="font-semibold text-white mb-2">Where Is It Useful?</h3>
           <p>
-            Base conversion is essential in programming, embedded systems, cryptography, and 
-            computer architecture. Developers often use it to debug binary data, calculate 
+            Base conversion is essential in programming, embedded systems, cryptography, and
+            computer architecture. Developers often use it to debug binary data, calculate
             memory addresses, or convert color codes and bitwise operations.
           </p>
         </div>

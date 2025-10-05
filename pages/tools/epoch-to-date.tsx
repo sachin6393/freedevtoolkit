@@ -57,15 +57,41 @@ export default function EpochToDate() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>Epoch to Human Date Converter - Converter Tools</title>
-        <meta
-          name="description"
-          content="Convert Unix epoch timestamps to readable human dates online. Instant, privacy-friendly, supports GMT and local time."
+        {/* <link rel="canonical" href="https://yourdomain.com/epoch-to-date-converter" /> */}
+
+        <title>Epoch to Date Converter | Convert Unix Timestamp to Human Date Online</title>
+        <meta name="description"
+          content="Free online Epoch to Date Converter. Convert Unix timestamps to readable human dates or back instantly. Supports both GMT and local timezones."
         />
         <meta
           name="keywords"
           content="epoch to date, unix timestamp converter, convert epoch to date, human readable date, online epoch converter"
         />
+        <meta property="og:title" content="Epoch to Date Converter | Convert Unix Timestamp to Human Date" />
+        <meta property="og:description" content="Free online epoch converter — convert Unix timestamps to readable human dates or back instantly." />
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://yourdomain.com/epoch-to-date-converter" /> */}
+
+        <script type="application/ld+json">
+          {`
+              {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Epoch to Date Converter",
+                "url": "https://yourdomain.com/epoch-to-date-converter",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "All",
+                "description": "Convert Unix timestamps to readable dates or vice versa online.",
+                "featureList": [
+                  "Convert epoch to human date",
+                  "Convert date to epoch timestamp",
+                  "Support for GMT and local time",
+                  "Real-time current epoch display"
+  ]
+              }
+              `}
+        </script>
+
       </Head>
 
       <h1 className="text-xl font-bold mb-4">
@@ -251,6 +277,18 @@ export default function EpochToDate() {
           databases, cron jobs, and more.
         </p>
       </section>
+      <section className="mt-10 text-gray-300 leading-relaxed text-sm">
+        <h2 className="text-lg font-semibold mb-2">Frequently Asked Questions</h2>
+        <h3 className="font-semibold mt-3">What is an Epoch Timestamp?</h3>
+        <p>Epoch or Unix time is the number of seconds that have elapsed since January 1, 1970 (UTC). It is commonly used in programming and data storage.</p>
+
+        <h3 className="font-semibold mt-3">How do I convert a timestamp to a readable date?</h3>
+        <p>Enter the epoch timestamp and click convert. The tool will display a local or GMT date instantly.</p>
+
+        <h3 className="font-semibold mt-3">Can I convert human date back to Unix time?</h3>
+        <p>Yes, select a date and time to see the corresponding Unix epoch timestamp in seconds and milliseconds.</p>
+      </section>
+
     </ToolLayout>
   );
 }

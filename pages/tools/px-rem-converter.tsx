@@ -61,24 +61,47 @@ export default function PxRemConverter() {
   return (
     <>
       <Head>
-        <title>PX to REM & REM to PX Converter | Free Online Tool</title>
-        <meta
-          name="description"
-          content="Convert PX to REM and REM to PX instantly using this free online converter. Supports custom base font sizes for accurate CSS unit conversion."
-        />
-        <meta
-          name="keywords"
-          content="PX to REM, REM to PX, CSS unit converter, responsive design, web development"
-        />
+        <title>PX to REM & REM to PX Converter – Free Online CSS Unit Tool</title>
+        <meta name="description" content="Convert PX to REM and REM to PX instantly with this free online CSS unit converter. Supports custom base font sizes for accurate, responsive design conversions. No login, no tracking." />
+        <meta name="keywords" content="PX to REM, REM to PX, CSS unit converter, pixel to rem, rem to pixel, responsive design, web development, font size converter, free tool" />
+        <meta name="author" content="DevToolbox" />
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://yourdomain.com/px-rem-converter"
-        />
-        <meta property="og:title" content="PX to REM & REM to PX Converter"
-        />
+        <link rel="canonical" href="https://yourdomain.com/tools/px-rem-converter" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="PX to REM & REM to PX Converter – Free Online CSS Unit Tool" />
+        <meta property="og:description" content="Convert PX to REM and REM to PX instantly with this free online CSS unit converter. Supports custom base font sizes for accurate, responsive design conversions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/px-rem-converter" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="PX to REM & REM to PX Converter – Free Online CSS Unit Tool" />
+        <meta name="twitter:description" content="Convert PX to REM and REM to PX instantly with this free online CSS unit converter. Supports custom base font sizes for accurate, responsive design conversions." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PX to REM & REM to PX Converter",
+        "url": "https://yourdomain.com/tools/px-rem-converter",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Convert PX to REM and REM to PX instantly with this free online CSS unit converter. Supports custom base font sizes for accurate, responsive design conversions.",
+        "featureList": [
+          "Convert PX to REM and REM to PX",
+          "Set custom base font size",
+          "Instant conversion for responsive CSS",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
-
       <ToolLayout tools={toolList}>
         <h1 className="text-2xl font-bold mb-4">
           PX to REM & REM to PX Converter

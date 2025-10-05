@@ -61,22 +61,46 @@ export default function PxEmConverter() {
   return (
     <>
       <Head>
-        <title>PX to EM & EM to PX Converter | Free Online Tool</title>
-        <meta
-          name="description"
-          content="Easily convert PX to EM and EM to PX with this free online converter. Set base font size and get accurate conversions for responsive CSS."
-        />
-        <meta
-          name="keywords"
-          content="PX to EM, EM to PX, CSS unit converter, responsive design, web development tool"
-        />
+        <title>PX to EM & EM to PX Converter – Free Online CSS Unit Tool</title>
+        <meta name="description" content="Convert PX to EM and EM to PX instantly with this free online CSS unit converter. Set base font size for accurate, responsive design conversions. No login, no tracking." />
+        <meta name="keywords" content="PX to EM, EM to PX, CSS unit converter, pixel to em, em to pixel, responsive design, web development, font size converter, free tool" />
+        <meta name="author" content="DevToolbox" />
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://yourdomain.com/px-em-converter"
-        />
-        <meta property="og:title" content="PX to EM & EM to PX Converter"
-        />
+        <link rel="canonical" href="https://yourdomain.com/tools/px-em-converter" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="PX to EM & EM to PX Converter – Free Online CSS Unit Tool" />
+        <meta property="og:description" content="Convert PX to EM and EM to PX instantly with this free online CSS unit converter. Set base font size for accurate, responsive design conversions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/px-em-converter" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="PX to EM & EM to PX Converter – Free Online CSS Unit Tool" />
+        <meta name="twitter:description" content="Convert PX to EM and EM to PX instantly with this free online CSS unit converter. Set base font size for accurate, responsive design conversions." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PX to EM & EM to PX Converter",
+        "url": "https://yourdomain.com/tools/px-em-converter",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Convert PX to EM and EM to PX instantly with this free online CSS unit converter. Set base font size for accurate, responsive design conversions.",
+        "featureList": [
+          "Convert PX to EM and EM to PX",
+          "Set custom base font size",
+          "Instant conversion for responsive CSS",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
 
       <ToolLayout tools={toolList}>

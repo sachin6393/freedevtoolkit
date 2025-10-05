@@ -78,11 +78,47 @@ export default function AgeCalculator() {
   return (
     <>
       <Head>
-        <title>Age Calculator — Years, Months, Days</title>
-        <meta
-          name="description"
-          content="Calculate age or time duration between two dates. View the result in years, months, weeks, days, hours, minutes, and seconds."
-        />
+        <title>Age Calculator Online – Years, Months, Days, Hours, Minutes, Seconds</title>
+        <meta name="description" content="Calculate age or time duration between two dates. Get results in years, months, weeks, days, hours, minutes, and seconds. Free, fast, and privacy-friendly age calculator tool." />
+        <meta name="keywords" content="age calculator, date duration calculator, calculate age, time between dates, years months days calculator, birthday calculator, online age calculator, free age tool" />
+        <meta name="author" content="DevToolbox" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/age-calculator" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Age Calculator Online – Years, Months, Days, Hours, Minutes, Seconds" />
+        <meta property="og:description" content="Calculate age or time duration between two dates. Get results in years, months, weeks, days, hours, minutes, and seconds. Free, fast, and privacy-friendly age calculator tool." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/age-calculator" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Age Calculator Online – Years, Months, Days, Hours, Minutes, Seconds" />
+        <meta name="twitter:description" content="Calculate age or time duration between two dates. Get results in years, months, weeks, days, hours, minutes, and seconds. Free, fast, and privacy-friendly age calculator tool." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Age Calculator",
+        "url": "https://yourdomain.com/tools/age-calculator",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Calculate age or time duration between two dates. Get results in years, months, weeks, days, hours, minutes, and seconds. Free, fast, and privacy-friendly age calculator tool.",
+        "featureList": [
+          "Calculate age between two dates",
+          "Results in years, months, days, hours, minutes, seconds",
+          "Handles leap years and month wraparounds",
+          "Copy results to clipboard",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
       <ToolLayout tools={toolList}>
         <h1 className="text-lg font-bold mb-4">Age Calculator</h1>
@@ -173,6 +209,25 @@ export default function AgeCalculator() {
             uploaded.
           </p>
         </section>
+
+        <section className="mt-8 text-gray-300 leading-relaxed text-sm">
+          <h2 className="text-lg font-semibold mb-2">
+            Limitations of This Age Calculator
+          </h2>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              <span className="font-semibold">No Time Zone Handling:</span> All calculations use your device’s local time zone. Differences due to time zones are not accounted for.
+            </li>
+            <li>
+              <span className="font-semibold">Date Range Validation:</span> The tool only works if the "To Date" is after the "From Date." Invalid or reversed date ranges will show an error.
+            </li>
+            <li>
+              <span className="font-semibold">Leap Year & Month Wraparound:</span> While leap years and month wraparounds are handled, results may differ slightly from official age calculations used in legal or medical contexts.
+            </li>
+
+          </ul>
+        </section>
+
       </ToolLayout>
     </>
   );

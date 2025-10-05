@@ -54,17 +54,47 @@ export default function Base64Tool() {
 
   return (
     <ToolLayout tools={toolList}>
-     <Head>
-  <title>Base64 Encoder / Decoder – Encode or Decode Base64 Online</title>
-  <meta name="description" content="Use this free online Base64 tool to quickly encode or decode text. Perfect for developers working with data encoding, secure storage, or APIs. No signup, no tracking." />
-  <meta name="keywords" content="Base64 encoder, Base64 decoder, online Base64 tool, encode Base64, decode Base64, developer tools, web tools, free Base64 converter" />
-  <meta property="og:title" content="Base64 Encoder / Decoder – Free Online Tool" />
-  <meta property="og:description" content="Free online Base64 encoder and decoder tool for developers. Fast, secure, and easy to use." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/base64-encoder-decoder" />
-  <meta property="og:image" content="https://yourdomain.com/og-image/base64.png" />
-  <link rel="canonical" href="https://yourdomain.com/base64-encoder-decoder" />
-</Head>
+      <Head>
+        <title>Free Base64 Encoder / Decoder – Encode or Decode Base64 Online free</title>
+        <meta name="description" content="Use this free online Base64 tool to quickly encode or decode text. Perfect for developers working with data encoding, secure storage, or APIs. No signup, no tracking." />
+        <meta name="keywords" content="Base64 encoder, Base64 decoder, online Base64 tool, encode Base64, decode Base64, developer tools, web tools, free Base64 converter" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/base64-encoder-decoder" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Base64 Encoder / Decoder – Free Online Tool" />
+        <meta property="og:description" content="Free online Base64 encoder and decoder tool for developers. Fast, secure, and easy to use." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/base64-encoder-decoder" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Base64 Encoder / Decoder – Free Online Tool" />
+        <meta name="twitter:description" content="Free online Base64 encoder and decoder tool for developers. Fast, secure, and easy to use." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Base64 Encoder / Decoder",
+        "url": "https://yourdomain.com/tools/base64-encoder-decoder",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Use this free online Base64 tool to quickly encode or decode text. Perfect for developers working with data encoding, secure storage, or APIs. No signup, no tracking.",
+        "featureList": [
+          "Encode text to Base64",
+          "Decode Base64 to text",
+          "Copy or download results",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
+      </Head>
 
       <h1 className="text-2xl font-bold mb-4">Base64 Encoder / Decoder</h1>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
@@ -76,21 +106,19 @@ export default function Base64Tool() {
         <label className="font-medium">Mode:</label>
         <button
           onClick={() => setMode("encode")}
-          className={`px-4 py-2 rounded ${
-            mode === "encode"
+          className={`px-4 py-2 rounded ${mode === "encode"
               ? "bg-green-600 text-white"
               : "bg-gray-600 text-white hover:bg-gray-700"
-          }`}
+            }`}
         >
           Encode
         </button>
         <button
           onClick={() => setMode("decode")}
-          className={`px-4 py-2 rounded ${
-            mode === "decode"
+          className={`px-4 py-2 rounded ${mode === "decode"
               ? "bg-blue-600 text-white"
               : "bg-gray-600 text-white hover:bg-gray-700"
-          }`}
+            }`}
         >
           Decode
         </button>
@@ -162,38 +190,38 @@ export default function Base64Tool() {
       </div>
 
       <section className="mt-10">
-  <h2 className="text-xl font-semibold text-white mb-4">What is Base64 Encoding?</h2>
-  <p className="text-gray-300 mb-4">
-    Base64 is a binary-to-text encoding scheme commonly used to represent binary data in a text format, such as when embedding images in HTML or transferring data in JSON, XML, or APIs.
-  </p>
+        <h2 className="text-xl font-semibold text-white mb-4">What is Base64 Encoding?</h2>
+        <p className="text-gray-300 mb-4">
+          Base64 is a binary-to-text encoding scheme commonly used to represent binary data in a text format, such as when embedding images in HTML or transferring data in JSON, XML, or APIs.
+        </p>
 
-  <h3 className="font-semibold text-white mb-2">Why Use Base64 Encoding?</h3>
-  <ul className="list-disc list-inside mb-4 text-gray-300">
-    <li>Safely encode binary or special characters in web formats</li>
-    <li>Securely transmit data over text-based protocols (e.g., email, JSON)</li>
-    <li>Embed images or files into HTML or CSS without linking externally</li>
-  </ul>
+        <h3 className="font-semibold text-white mb-2">Why Use Base64 Encoding?</h3>
+        <ul className="list-disc list-inside mb-4 text-gray-300">
+          <li>Safely encode binary or special characters in web formats</li>
+          <li>Securely transmit data over text-based protocols (e.g., email, JSON)</li>
+          <li>Embed images or files into HTML or CSS without linking externally</li>
+        </ul>
 
-  <h3 className="font-semibold text-white mb-2">Frequently Asked Questions (FAQs)</h3>
-  <div className="text-gray-300 space-y-4">
-    <div>
-      <strong>🔹 What is Base64 used for?</strong>
-      <p>Base64 is used to encode binary data into ASCII text for use in web development, APIs, or email transmission.</p>
-    </div>
-    <div>
-      <strong>🔹 Is Base64 encryption?</strong>
-      <p>No, Base64 is not encryption. It’s an encoding method that makes data readable by systems that expect plain text.</p>
-    </div>
-    <div>
-      <strong>🔹 Can I decode Base64 without a key?</strong>
-      <p>Yes, Base64 encoding/decoding does not use a key. It’s fully reversible without any secret.</p>
-    </div>
-    <div>
-      <strong>🔹 How do I encode and decode Base64 online?</strong>
-      <p>Paste your input above, select “Encode” or “Decode,” then click Convert. You can also copy or download the output.</p>
-    </div>
-  </div>
-</section>
+        <h3 className="font-semibold text-white mb-2">Frequently Asked Questions (FAQs)</h3>
+        <div className="text-gray-300 space-y-4">
+          <div>
+            <strong>🔹 What is Base64 used for?</strong>
+            <p>Base64 is used to encode binary data into ASCII text for use in web development, APIs, or email transmission.</p>
+          </div>
+          <div>
+            <strong>🔹 Is Base64 encryption?</strong>
+            <p>No, Base64 is not encryption. It’s an encoding method that makes data readable by systems that expect plain text.</p>
+          </div>
+          <div>
+            <strong>🔹 Can I decode Base64 without a key?</strong>
+            <p>Yes, Base64 encoding/decoding does not use a key. It’s fully reversible without any secret.</p>
+          </div>
+          <div>
+            <strong>🔹 How do I encode and decode Base64 online?</strong>
+            <p>Paste your input above, select “Encode” or “Decode,” then click Convert. You can also copy or download the output.</p>
+          </div>
+        </div>
+      </section>
 
     </ToolLayout>
   );

@@ -114,8 +114,7 @@ export default function XmlToJson() {
     <>
       <Head>
         <title>
-          XML to JSON Converter - Fast, Free & Privacy-Friendly | Converters
-          ToolKit
+          XML to JSON Converter - Fast, Free & Privacy-Friendly | freedevtoolkit
         </title>
         <meta
           name="description"
@@ -125,6 +124,39 @@ export default function XmlToJson() {
           name="keywords"
           content="XML to JSON, convert XML to JSON, free XML JSON converter, XML parser, data transformation, online XML JSON tool"
         />
+        <meta name="robots" content="index, follow" />
+        {/* <link rel="canonical" href="https://yourdomain.com/tools/xml-to-json" /> */}
+      
+        <meta property="og:title" content="XML to JSON Converter - Fast, Free & Privacy-Friendly" />
+        <meta property="og:description" content="Convert XML data to JSON format instantly with this free online tool. No ads, no tracking, just fast and reliable transformation." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/xml-to-json" />
+        {/* <meta property="og:image" content="https://yourdomain.com/og-image-xml-to-json.png" /> */}
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="XML to JSON Converter - Fast, Free & Privacy-Friendly" />
+        <meta name="twitter:description" content="Convert XML data to JSON format instantly with this free online tool. No ads, no tracking, just fast and reliable transformation." />
+        <meta name="twitter:image" content="https://yourdomain.com/og-image-xml-to-json.png" />
+       
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "XML to JSON Converter",
+              "url": "https://yourdomain.com/tools/xml-to-json",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "description": "Convert XML data to JSON format instantly with this free online tool. No ads, no tracking, just fast and reliable transformation.",
+              "featureList": [
+                "Convert XML to JSON",
+                "Supports nested elements and attributes",
+                "Fast, privacy-friendly conversion",
+                "No ads, no tracking"
+              ]
+            }
+          `}
+        </script>
       </Head>
 
       <ToolLayout tools={tools}>
@@ -231,6 +263,41 @@ export default function XmlToJson() {
             </a>
             .
           </p>
+        </section>
+         <section className="mt-10 mb-8">
+          <h2 className="text-lg font-semibold mb-4 text-gray-200">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-gray-300">Is my XML data sent to a server?</h3>
+              <p className="text-gray-400 text-sm">
+                No. All conversions happen in your browser. Your XML data never leaves your device, ensuring privacy and security.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-300">Does this tool support attributes and nested elements?</h3>
+              <p className="text-gray-400 text-sm">
+                Yes, the converter preserves both attributes and nested elements, giving you a clean and accurate JSON output.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-300">Can I convert large XML files?</h3>
+              <p className="text-gray-400 text-sm">
+                You can convert reasonably large XML files, but performance depends on your browser and device. For very large files, consider using a desktop tool.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-300">Is this XML to JSON converter free?</h3>
+              <p className="text-gray-400 text-sm">
+                Yes, this tool is completely free to use with no ads or tracking.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-300">Can I use the converted JSON in my code?</h3>
+              <p className="text-gray-400 text-sm">
+                Absolutely! The output is standard JSON and can be used in JavaScript, Python, or any language that supports JSON.
+              </p>
+            </div>
+          </div>
         </section>
       </ToolLayout>
     </>

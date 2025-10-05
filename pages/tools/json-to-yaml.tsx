@@ -69,17 +69,46 @@ export default function JsonToYamlConverter() {
           rel="canonical"
           href="https://yourdomain.com/tools/json-to-yaml"
         />
-        <meta property="og:title" content="JSON to YAML Converter Online" />
+        <meta property="og:title" content="JSON to YAML Converter Online - Free & Instant" />
         <meta
           property="og:description"
-          content="Convert JSON to YAML format instantly with our
-free online tool. Easy to use, no registration required."
+          content="Convert JSON to YAML format instantly with our free online tool. Easy to use, no registration required."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://yourdomain.com/tools/json-to-yaml"
         />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="JSON to YAML Converter Online - Free & Instant" />
+        <meta name="twitter:description" content="Convert JSON to YAML format instantly with our free online tool. Easy to use, no registration required." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "JSON to YAML Converter",
+              "url": "https://yourdomain.com/tools/json-to-yaml",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "description": "Free online JSON to YAML converter. Convert your JSON data into readable YAML instantly. No login, no tracking. Copy or download YAML output easily.",
+              "featureList": [
+                "Convert JSON to YAML instantly",
+                "Supports arrays, nested structures, and objects",
+                "Error handling for invalid JSON",
+                "Download or copy YAML output",
+                "Free and privacy-friendly"
+              ],
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
       </Head>
 
       <h1 className="text-xl font-bold mb-4">JSON to YAML Converter</h1>

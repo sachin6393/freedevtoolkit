@@ -23,17 +23,22 @@ export default function ColorConverter() {
     <>
       <ToolLayout tools={toolList}>
         <Head>
-          <title>Color Converter - HEX, RGB, HSL | Converter Tools</title>
-          <meta
-            name="description"
-            content="Convert colors between HEX, RGB, and HSL formats instantly. Get live preview and precise color code conversions with this free online color converter tool."
-          />
+          <title>Free Color Converter – HEX, RGB, HSL | Free Online color converter Tool</title>
+          <meta name="description" content="Convert colors between HEX, RGB, and HSL formats instantly. Live preview and precise color code conversions for designers and developers. Free, fast, and privacy-friendly." />
+          <meta name="keywords" content="color converter, hex to rgb, rgb to hex, hsl converter, color format converter, css color, web design, frontend tools" />
+          <meta name="author" content="DevToolbox" />
           <meta name="robots" content="index, follow" />
-          <meta property="og:title" content="Color Converter - HEX, RGB, HSL | Converter Tools" />
-          <meta property="og:description" content="Convert colors between HEX, RGB, and HSL formats instantly. Get live preview and precise color code conversions with this free online color converter tool." />
+          <link rel="canonical" href="https://yourdomain.com/tools/color-converter" />
+          {/* Open Graph tags */}
+          <meta property="og:title" content="Color Converter – HEX, RGB, HSL | Free Online Tool" />
+          <meta property="og:description" content="Convert colors between HEX, RGB, and HSL formats instantly. Live preview and precise color code conversions for designers and developers." />
           <meta property="og:type" content="website" />
-
-          {/* ✅ JSON-LD Schema for SEO */}
+          <meta property="og:url" content="https://yourdomain.com/tools/color-converter" />
+          {/* Twitter Card tags */}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content="Color Converter – HEX, RGB, HSL | Free Online Tool" />
+          <meta name="twitter:description" content="Convert colors between HEX, RGB, and HSL formats instantly. Live preview and precise color code conversions for designers and developers." />
+          {/* JSON-LD SoftwareApplication Structured Data */}
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -44,13 +49,23 @@ export default function ColorConverter() {
                 "applicationCategory": "DeveloperTool",
                 "operatingSystem": "Any",
                 "description": "Free online color converter that instantly converts between HEX, RGB, and HSL formats with live preview support.",
-                "url": "https://convertertools.com/tools/color-converter",
+                "url": "https://yourdomain.com/tools/color-converter",
                 "keywords": "color converter, hex to rgb, rgb to hex, hsl converter, color format converter",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": "4.9",
-                  "reviewCount": "145"
-                },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              })
+            }}
+          />
+          {/* JSON-LD FAQ Structured Data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
                 "mainEntity": [
                   {
                     "@type": "Question",
@@ -149,13 +164,13 @@ export default function ColorConverter() {
 
           <h3 className="text-lg font-semibold mb-2">Common Use Cases</h3>
           <p className="mb-4">
-            This tool is perfect for web designers, frontend developers, and UI/UX professionals who need to quickly 
+            This tool is perfect for web designers, frontend developers, and UI/UX professionals who need to quickly
             convert and preview colors. Use it when styling websites, working with CSS variables, or generating themes.
           </p>
 
           <h3 className="text-lg font-semibold mb-2">Color Conversion Examples</h3>
           <p>
-            Example: <code>#ff5733</code> → <code>rgb(255, 87, 51)</code> → <code>hsl(11°, 100%, 60%)</code>.  
+            Example: <code>#ff5733</code> → <code>rgb(255, 87, 51)</code> → <code>hsl(11°, 100%, 60%)</code>.
             Experiment with any HEX, RGB, or HSL code to understand how they relate.
           </p>
         </section>

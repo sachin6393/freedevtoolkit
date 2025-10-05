@@ -57,9 +57,10 @@ skills:
 
   return (
     <ToolLayout tools={toolList}>
+     
       <Head>
         <title>
-          YAML to JSON Converter Online | Free YAML Parser - Converter Tools
+          YAML to JSON Converter Online | Free YAML Parser | free yaml to json online
         </title>
         <meta
           name="description"
@@ -72,8 +73,34 @@ skills:
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://yourdomain.com/yaml-to-json-converter"
+          // href="https://yourdomain.com/yaml-to-json-converter"
         />
+    
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "YAML to JSON Converter",
+              "url": "https://yourdomain.com/yaml-to-json-converter",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "description": "Easily convert YAML to JSON with our free online YAML to JSON converter. Supports formatting, copying, downloading, and error detection. No login required.",
+              "featureList": [
+                "Convert YAML to JSON instantly",
+                "Supports lists, nested structures, and objects",
+                "Error handling for invalid YAML",
+                "Download or copy JSON output",
+                "Free and privacy-friendly"
+              ],
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
       </Head>
 
       <h1 className="text-xl font-bold mb-4">YAML to JSON Converter</h1>

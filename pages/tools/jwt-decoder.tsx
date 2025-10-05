@@ -59,36 +59,46 @@ export default function JwtDecoder() {
   return (
     <ToolLayout tools={toolList}>
       <Head>
-        <title>JWT Decoder Online - Free & Secure Token Decoder</title>
-        <meta
-          name="description"
-          content="Decode your JWT tokens instantly with our free JWT decoder tool. View header and payload securely. Everything runs client-side."
-        />
-        <meta
-          name="keywords"
-          content="JWT decoder, decode JWT token, JSON Web Token, JWT online, free JWT decoder, token debugging, JWT header payload"
-        />
+        <title>JWT Decoder Online – Free & Secure Token Decoder</title>
+        <meta name="description" content="Decode JWT tokens instantly and securely in your browser. View header and payload, debug JSON Web Tokens for API development and authentication." />
+        <meta name="keywords" content="JWT decoder, decode JWT token, JSON Web Token, JWT online, free JWT decoder, token debugging, JWT header payload, JWT inspector, JWT viewer" />
         <meta name="author" content="DevToolbox" />
-        <meta
-          property="og:title"
-          content="JWT Decoder - Decode JSON Web Tokens"
-        />
-        <meta
-          property="og:description"
-          content="Instantly decode and inspect JWT tokens securely in your browser. No server involved."
-        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/tools/jwt-decoder" />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="JWT Decoder Online – Free & Secure Token Decoder" />
+        <meta property="og:description" content="Decode JWT tokens instantly and securely in your browser. View header and payload, debug JSON Web Tokens for API development and authentication." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/jwt-decoder" />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/jwt-decoder-banner.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Free JWT Decoder Tool" />
-        <meta
-          name="twitter:description"
-          content="Decode JWTs instantly and securely. Useful for developers and testers."
-        />
+        <meta property="og:url" content="https://yourdomain.com/tools/jwt-decoder" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="JWT Decoder Online – Free & Secure Token Decoder" />
+        <meta name="twitter:description" content="Decode JWT tokens instantly and securely in your browser. View header and payload, debug JSON Web Tokens for API development and authentication." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JWT Decoder",
+        "url": "https://yourdomain.com/tools/jwt-decoder",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "description": "Decode JWT tokens instantly and securely in your browser. View header and payload, debug JSON Web Tokens for API development and authentication.",
+        "featureList": [
+          "Decode JWT header and payload",
+          "Works 100% client-side for privacy",
+          "Copy or download decoded JSON",
+          "Free and privacy-friendly"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    `}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">JWT Decoder</h1>

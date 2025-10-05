@@ -71,29 +71,56 @@ export default function TextCaseConverter() {
 
   return (
     <ToolLayout tools={toolList}>
-      <Head>
-        <title>
-          Text Case Converter Online | Convert to camelCase, snake_case & More
-        </title>
+           <Head>
+        <title>free text Case Converter Online | Convert to camelCase, snake_case & More</title>
         <meta
           name="description"
-          content="Convert text to various cases like camelCase, PascalCase, snake_case, kebab-case, and CONSTANT_CASE online. Developer-friendly case converter tool with instant results."
+          content="Convert text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, and CONSTANT_CASE instantly. Free developer-friendly online text case converter."
         />
         <meta
           name="keywords"
-          content="Text Case Converter, Convert to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, CONSTANT_CASE, developer tools"
+          content="Text Case Converter, camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, CONSTANT_CASE, online converter, developer tools"
         />
         <meta name="author" content="DevTools by Sachin" />
-        <meta property="og:title" content="Text Case Converter Online" />
-        <meta
-          property="og:description"
-          content="Convert your text to camelCase, PascalCase, snake_case, and more. A developer-friendly online text case converter."
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://yourdomain.com/tools/text-case-converter"
         />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Text Case Converter Online | Convert to camelCase, snake_case & More" />
+        <meta property="og:description" content="Convert text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, and CONSTANT_CASE instantly. Free developer-friendly online text case converter." />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://yourdomain.com/text-case-converter"
-        />
+        <meta property="og:url" content="https://yourdomain.com/tools/text-case-converter" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Text Case Converter Online | Convert to camelCase, snake_case & More" />
+        <meta name="twitter:description" content="Convert text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, and CONSTANT_CASE instantly. Free developer-friendly online text case converter." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "Text Case Converter",
+              "url": "https://yourdomain.com/tools/text-case-converter",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "description": "Convert text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, and CONSTANT_CASE instantly. Free developer-friendly online text case converter.",
+              "featureList": [
+                "Convert text to camelCase, PascalCase, snake_case, kebab-case, UPPERCASE, lowercase, CONSTANT_CASE",
+                "Instant conversion",
+                "Copy output to clipboard",
+                "Free and privacy-friendly"
+              ],
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">Text Case Converter</h1>

@@ -56,21 +56,56 @@ const handleFormat = () => {
 
   return (
     <ToolLayout tools={toolList}>
-      <Head>
-        <title>JSON Formatter & Beautifier Online - Developer Tools</title>
+            <Head>
+        <title>free JSON Formatter & Beautifier Online | free JSON Formatter</title>
         <meta
           name="description"
           content="Format and beautify your JSON instantly with our fast, SEO-friendly JSON formatter tool. Indent and prettify JSON for easy reading and debugging."
         />
         <meta
           name="keywords"
-          content="json formatter, json beautifier, online json formatter, format json, beautify json"
+          content="json formatter, json beautifier, online json formatter, format json, beautify json, prettify json, json viewer, developer tools"
         />
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://yourdomain.com/json-formatter"
+          href="https://yourdomain.com/tools/json-formatter"
         />
+        {/* Open Graph tags */}
+        <meta property="og:title" content="JSON Formatter & Beautifier Online - Developer Tools" />
+        <meta property="og:description" content="Format and beautify your JSON instantly with our fast, SEO-friendly JSON formatter tool. Indent and prettify JSON for easy reading and debugging." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/tools/json-formatter" />
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="JSON Formatter & Beautifier Online - Developer Tools" />
+        <meta name="twitter:description" content="Format and beautify your JSON instantly with our fast, SEO-friendly JSON formatter tool. Indent and prettify JSON for easy reading and debugging." />
+        {/* JSON-LD WebApplication Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "JSON Formatter & Beautifier",
+              "url": "https://yourdomain.com/tools/json-formatter",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "description": "Format and beautify your JSON instantly with our fast, SEO-friendly JSON formatter tool. Indent and prettify JSON for easy reading and debugging.",
+              "featureList": [
+                "Instantly format and beautify JSON",
+                "Indent and prettify for readability",
+                "Copy or download formatted JSON",
+                "Error detection for invalid JSON",
+                "Free and privacy-friendly"
+              ],
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
       </Head>
 
       <h1 className="text-2xl font-bold mb-4">JSON Formatter / Beautifier</h1>
